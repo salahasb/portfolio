@@ -11,7 +11,7 @@ function Header() {
 				Salah <span className="text-brand-500">Asb</span>
 			</Link>
 
-			<Navbar className="hidden md:block text-[2rem]" />
+			<Navbar />
 
 			<Link
 				to="contact"

@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-function Navbar({ className }) {
+function Navbar() {
 	return (
-		<nav className={`${className}`}>
+		<nav className={`hidden md:block text-[2rem]`}>
 			<ul className="flex  tracking-wide font-bold gap-10 xl:gap-16 ">
 				<li>
 					<NavLink to="/" className="border-b  pb-3 border-b-brand-500">
