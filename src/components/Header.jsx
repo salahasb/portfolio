@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Button from "./Button";
 
 function Header() {
 	return (
@@ -13,12 +14,7 @@ function Header() {
 
 			<Navbar />
 
-			<Link
-				to="contact"
-				className="text-white text-[1.8rem] font-semibold rounded-lg hidden 425:inline-block  bg-brand-500 px-5 py-2  "
-			>
-				Let&apos;s talk
-			</Link>
+			<Button> Let&apos;s talk</Button>
 		</header>
 	);
 }

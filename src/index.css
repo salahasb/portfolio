@@ -8,6 +8,15 @@
 	}
 
 	body {
-		@apply bg-brand-900 text-white;
+		background: rgb(33, 0, 0);
+		background: linear-gradient(
+			145deg,
+			#000 0%,
+			#000 10%,
+			#470619 50%,
+			#000 90%,
+			#000 100%
+		);
+		@apply text-white;
 	}
 }
