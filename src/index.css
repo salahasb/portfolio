@@ -8,14 +8,15 @@
 	}
 
 	body {
-		background: rgb(33, 0, 0);
+		background: #1f0208;
+		/* background: #2f0410; */
 		background: linear-gradient(
 			145deg,
-			#000 0%,
-			#000 10%,
-			#470619 50%,
-			#000 90%,
-			#000 100%
+			#25030d 0%,
+			#25030d 20%,
+			#410517 50%,
+			#25030d 80%,
+			#25030d 100%
 		);
 		@apply text-white;
 	}

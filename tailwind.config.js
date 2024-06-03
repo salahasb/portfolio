@@ -6,10 +6,11 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: { sans: ["Inter", "sans-serif"] },
-			colors: { brand: { 500: "#ec1352", 900: "#16000b" } },
+			colors: { brand: { 500: "#ec1352", 900: "#2f0410" } },
 			screens: {
 				425: "425px",
 				500: "500px",
+				900: "900px",
 			},
 			container: {
 				center: true,

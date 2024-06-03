@@ -81,7 +81,7 @@ const Particle = () => {
 					density: {
 						enable: true,
 					},
-					value: 200,
+					value: 50,
 				},
 				opacity: {
 					value: 0.9,
