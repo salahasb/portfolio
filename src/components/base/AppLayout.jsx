@@ -6,10 +6,12 @@ import ScrollIndicator from "./ScrollIndicator.jsx";
 
 function AppLayout() {
 	return (
-		<div className="h-dvh lg:container px-10 500:px-20  relative">
+		<div className="h-dvh px-10 500:px-14 md:px-20 xl:px-36 max-w-[1900px] mx-auto relative">
 			<Header />
 
-			<Outlet />
+			<main className="h-[calc(100%-8.9rem)]">
+				<Outlet />
+			</main>
 
 			{/* <Particle /> */}
 
