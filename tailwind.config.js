@@ -5,11 +5,10 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
-			fontFamily: { sans: ["Inter", "sans-serif"] },
-			colors: { brand: { 500: "#ec1352", 900: "#16000b" } },
 			screens: {
 				425: "425px",
 				500: "500px",
+				900: "900px",
 			},
 			container: {
 				center: true,
@@ -25,6 +24,15 @@ export default {
 				// screen: {
 				// 	...defaultTheme.screens,
 				// },
+			},
+			fontFamily: { sans: ["Inter", "sans-serif"] },
+			colors: { brand: { 500: "#ec1352", 900: "#2f0410" } },
+			fontSize: {
+				"clamp-heading-sm": "clamp(2.5rem, 8vw, 14rem)",
+				"clamp-heading-md": "clamp(2.5rem, 7.6vw , 14rem)",
+				"clamp-heading-lg": "clamp(2.5rem, 8vw , 14rem)",
+				"clamp-heading-xl": "clamp(2.5rem, 8.2vw , 14rem)",
+				"clamp-heading-2xl": "clamp(2.5rem, 8.5vw , 17rem)",
 			},
 		},
 	},
