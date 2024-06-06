@@ -34,6 +34,20 @@ export default {
 				"clamp-heading-xl": "clamp(2.5rem, 8.2vw , 14rem)",
 				"clamp-heading-2xl": "clamp(2.5rem, 8.5vw , 17rem)",
 			},
+			animation: {
+				"fade-translate-up": "fade-translate-up 0.3s ease-in-out ",
+				"scroll-indicator": "scroll 2s  ease-out    infinite",
+			},
+			keyframes: {
+				scroll: {
+					// "30%": { opacity: 1 },
+					to: {
+						//  top: "65%",
+						transform: "translate(-50%,1.6rem) ",
+						opacity: 0,
+					},
+				},
+			},
 		},
 	},
 	plugins: [],
