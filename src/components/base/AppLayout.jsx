@@ -3,8 +3,27 @@ import Header from "./Header.jsx";
 import NavbarIcons from "./NavbarIcons.jsx";
 import Particle from "../../lib/Particles.jsx";
 import ScrollIndicator from "./ScrollIndicator.jsx";
+import { useEffect, useState } from "react";
 
 function AppLayout() {
+	const [isPageLoaded, setIsPageLoaded] = useState(false);
+
+	useEffect(() => {
+		const handlePageLoad = () => {
+			setIsPageLoaded(true);
+		};
+
+		window.addEventListener("load", handlePageLoad);
+
+		return () => {
+			window.removeEventListener("load", handlePageLoad);
+		};
+	}, []);
+
+	if (!isPageLoaded) {
+		return <h2>Loading......</h2>;
+	}
+
 	return (
 		<div className="h-dvh px-10 500:px-14 md:px-20 xl:px-36 max-w-[1900px] mx-auto relative">
 			<Header />

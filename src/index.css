@@ -8,6 +8,7 @@
 	}
 
 	body {
+		height: 100dvh;
 		background: #1f0208;
 		/* background: #2f0410; */
 		background: linear-gradient(
