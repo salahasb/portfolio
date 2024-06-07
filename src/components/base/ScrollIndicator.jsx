@@ -6,7 +6,7 @@ function ScrollIndicator() {
 			<div className="h-[28%] w-[0.2rem] bg-gray-300 rounded-xl"></div>
 
 			<div className="border-[0.2rem] w-[2rem] h-[3.3rem] border-gray-300 rounded-2xl relative ">
-				<div className="absolute top-[0.5rem] left-1/2 size-[0.5rem] bg-gray-300  rounded-xl -translate-x-1/2 animate-scroll-indicator"></div>
+				<div className="absolute top-[0.5rem] left-1/2 w-[0.3rem] h-[0.6rem] bg-gray-300  rounded-md -translate-x-1/2 animate-scroll-indicator"></div>
 			</div>
 
 			<div className="h-[28%] w-[0.2rem] bg-gray-300 rounded-xl"></div>
