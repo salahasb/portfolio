@@ -42,8 +42,8 @@ const Particle = () => {
 						mode: "push",
 					},
 					onHover: {
-						enable: false,
-						mode: "repulse",
+						enable: true,
+						mode: "grab",
 					},
 				},
 				modes: {
@@ -54,6 +54,8 @@ const Particle = () => {
 						distance: 200,
 						duration: 0.4,
 					},
+					connect: { links: { opacity: 0.3, radius: 0 } },
+					grab: { links: { opacity: 1 } },
 				},
 			},
 			particles: {
@@ -61,10 +63,10 @@ const Particle = () => {
 					value: "#ffffff",
 				},
 				links: {
-					color: "#ffffff",
+					color: "#ec1352",
 					distance: 150,
-					enable: false,
-					opacity: 0.5,
+					enable: true,
+					opacity: 0.3,
 					width: 1,
 				},
 				move: {
@@ -75,16 +77,19 @@ const Particle = () => {
 					},
 					random: true,
 					speed: 1,
-					straight: false,
+					straight: true,
 				},
 				number: {
 					density: {
 						enable: true,
+						width: 900,
+						height: 900,
 					},
-					value: 50,
+					value: 200,
 				},
 				opacity: {
-					value: 0.9,
+					// value: 0.9,
+					value: 0.5,
 				},
 				shape: {
 					type: "circle",
@@ -101,7 +106,7 @@ const Particle = () => {
 	if (init) {
 		return (
 			<Particles
-				className="absolute -z-10"
+				className="absolute -z-10 "
 				id="tsparticles"
 				particlesLoaded={particlesLoaded}
 				options={options}

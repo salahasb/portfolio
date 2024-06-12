@@ -32,7 +32,7 @@ function AppLayout() {
 				<Outlet />
 			</main>
 
-			{/* <Particle /> */}
+			<Particle />
 
 			{/* <Navbar className="lg:hidden flex justify-center  text-[1.4rem] 425:text-[1.8rem] w-full fixed bottom-10 left-1/2 -translate-x-1/2" /> */}
 			<NavbarIcons />

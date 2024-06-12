@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 function Hero() {
 	return (
-		<section className="h-full flex flex-col items-center  justify-center -mt-[3%]  ">
+		<section className="h-full flex flex-col items-center  justify-center -mt-[3%] text-gray-200  ">
 			{/* <span className="  pl-40  text-[1.8rem] font-semibold uppercase tracking-widest text-[#ffffff] ">
 				home
 			</span> */}
@@ -20,12 +20,12 @@ function Hero() {
 			{/* <span className=" self-start pl-40 pb-16 text-[3rem] font-semibold uppercase tracking-widest text-[#e11351] ">
 				Hi, my name is salah
 			</span> */}
-			<p className="animate-scale-fade-subheading opacity-0 translate-y-[10rem] w-[95%] 425:w-[90%] 500:w-[85%]  lg:max-w-[88rem] text-[1.5rem] 425:text-[1.8rem] 500:text-[2rem] md:text-[2.2rem] 900:text-[2.5rem] text-center leading-[1.6] mb-12 xl:mb-16 lg:font-medium  ">
-				Hi, I&apos;m Salah asb, a front-end web developer, i turn design into a
-				reactive & responsive web app/site, with the latest technologies. i also
-				write clean and maintainable code.
+			<p className="animate-scale-fade-subheading opacity-0 translate-y-[10rem] w-[95%] 425:w-[90%] 500:w-[85%]  lg:max-w-[110rem] text-[1.5rem] 425:text-[1.8rem] 500:text-[2rem] md:text-[2.2rem] 900:text-[2.5rem] text-center leading-[1.6] mb-12 xl:mb-16 lg:font-medium  ">
+				Hi, I&apos;m Salah assab, a front-end web developer, i turn design into
+				a reactive & responsive web app/site, with the latest technologies. i
+				also write clean and maintainable code.
 			</p>
-			<Button className="px-10 md:px-14 text-[2rem] md:text-[2.2rem] xl:text-[2.6rem] animate-scale-fade-button opacity-0 scale-[0.7] origin-top">
+			<Button className="px-10 md:px-14 text-[2rem] md:text-[2.2rem] xl:text-[2.6rem] animate-scale-fade opacity-0 scale-[0.7] origin-top">
 				See my work
 			</Button>
 		</section>

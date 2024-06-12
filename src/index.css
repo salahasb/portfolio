@@ -9,17 +9,24 @@
 
 	body {
 		height: 100dvh;
-		background: #1f0208;
-		/* background: #2f0410; */
+		background-color: #25030d;
 		background: linear-gradient(
 			145deg,
 			#25030d 0%,
 			#25030d 20%,
-			#410517 50%,
+			#470619 50%,
 			#25030d 80%,
 			#25030d 100%
 		);
-		/* background-image: -webkit-radial-gradient() */
+
+		/* background: url("/public/Png\ \(1\).png") #25030d;
+		background-repeat: no-repeat;
+		background-size: 150%;
+		background-position: bottom right; */
+
 		@apply text-white;
 	}
+}
+
+@layer components {
 }

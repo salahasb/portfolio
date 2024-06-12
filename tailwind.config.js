@@ -40,7 +40,7 @@ export default {
 				"scroll-indicator": "scroll 2s  ease-out  infinite",
 				"heading-accent":
 					"accent-scaleX 1.5s   cubic-bezier(0,-0.01,0,.99) 1s forwards",
-				"scale-fade-button": "scale-fade 1s .8s forwards",
+				"scale-fade": "scale-fade 1s .8s forwards",
 			},
 			keyframes: {
 				scroll: {
