@@ -5,7 +5,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-const Particle = () => {
+const Particle = ({ className }) => {
 	const [init, setInit] = useState(false);
 
 	// this should be run only once per application lifetime
@@ -23,18 +23,16 @@ const Particle = () => {
 		});
 	}, []);
 
-	const particlesLoaded = (container) => {
-		console.log(container);
-	};
+	const particlesLoaded = (container) => {};
 
 	const options = useMemo(
 		() => ({
 			background: {
 				color: {
-					value: "transparent",
+					value: "#25030d",
 				},
 			},
-			fpsLimit: 120,
+			fpsLimit: 50,
 			interactivity: {
 				events: {
 					onClick: {
@@ -85,7 +83,7 @@ const Particle = () => {
 						width: 900,
 						height: 900,
 					},
-					value: 200,
+					value: 150,
 				},
 				opacity: {
 					// value: 0.9,
@@ -106,15 +104,13 @@ const Particle = () => {
 	if (init) {
 		return (
 			<Particles
-				className="absolute -z-10 "
+				className={`absolute -z-10 opacity-0 ${className} `}
 				id="tsparticles"
 				particlesLoaded={particlesLoaded}
 				options={options}
 			/>
 		);
 	}
-
-	return <></>;
 };
 
 export default Particle;

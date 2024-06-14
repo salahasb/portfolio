@@ -10,23 +10,27 @@
 	body {
 		height: 100dvh;
 		background-color: #25030d;
-		background: linear-gradient(
+
+		/* background-image: linear-gradient(
 			145deg,
 			#25030d 0%,
 			#25030d 20%,
 			#470619 50%,
 			#25030d 80%,
 			#25030d 100%
-		);
-
-		/* background: url("/public/Png\ \(1\).png") #25030d;
-		background-repeat: no-repeat;
-		background-size: 150%;
-		background-position: bottom right; */
+		); */
 
 		@apply text-white;
 	}
 }
 
 @layer components {
+}
+
+@layer utilities {
+	.center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }

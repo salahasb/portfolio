@@ -35,7 +35,7 @@ export default {
 				"clamp-heading-2xl": "clamp(2.5rem, 8.5vw , 17rem)",
 			},
 			animation: {
-				"fade-translate-up": "fade-translate-up 1s forwards",
+				"fadeIn-translateUp": "fadeIn-translateUp 1s 3s forwards",
 				"scale-fade-subheading": "scale-fade 1s 0.3s forwards",
 				"scroll-indicator": "scroll 2s  ease-out  infinite",
 				"heading-accent":
@@ -49,7 +49,7 @@ export default {
 						opacity: 0,
 					},
 				},
-				"fade-translate-up": {
+				"fadeIn-translateUp": {
 					"0%": {
 						opacity: 0,
 						transform: "translateY(10rem) ",
@@ -59,6 +59,16 @@ export default {
 						transform: "translateY(0rem) ",
 					},
 				},
+				"fadeIn-translateDown": {
+					"0%": {
+						opacity: 0,
+						transform: "translateY(-100%) ",
+					},
+					"100%": {
+						opacity: 1,
+						transform: "translateY(0%) ",
+					},
+				},
 				"accent-scaleX": {
 					"0%": { transform: "scaleX(0)" },
 					"100%": { transform: "scaleX(1)" },
@@ -66,6 +76,14 @@ export default {
 				"scale-fade": {
 					"0%": { opacity: 0, transform: "scale(0.7)" },
 					"100%": { opacity: 1, transform: "scale(1)" },
+				},
+				fadeOut: {
+					// "0%": { opacity: 1 },
+					"100%": { opacity: 0 },
+				},
+				fadeIn: {
+					// "0%": { opacity: 1 },
+					"100%": { opacity: 1 },
 				},
 			},
 		},
