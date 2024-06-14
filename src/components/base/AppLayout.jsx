@@ -37,7 +37,6 @@ function AppLayout() {
 			{/* {!isPageLoaded &&  */}
 			<Loader isPageLoaded={isPageLoaded} />
 			{/* } */}
-
 			{isPageLoaded && (
 				<>
 					<Header />

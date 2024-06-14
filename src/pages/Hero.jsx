@@ -20,7 +20,7 @@ function Hero() {
 			{/* <span className=" self-start pl-40 pb-16 text-[3rem] font-semibold uppercase tracking-widest text-[#e11351] ">
 				Hi, my name is salah
 			</span> */}
-			<p className="animate-[fadeIn-translateUp_1s_0.5s_forwards] opacity-0 translate-y-[10rem] w-[95%] 425:w-[90%] 500:w-[85%]  lg:max-w-[110rem] text-[1.5rem] 425:text-[1.8rem] 500:text-[2rem] md:text-[2.2rem] 900:text-[2.5rem] text-center leading-[1.6] mb-12 xl:mb-16 lg:font-medium  ">
+			<p className="animate-[fadeIn-translateUp_1s_1.8s_forwards] opacity-0 translate-y-[10rem] w-[95%] 425:w-[90%] 500:w-[85%]  lg:max-w-[110rem] text-[1.5rem] 425:text-[1.8rem] 500:text-[2rem] md:text-[2.2rem] 900:text-[2.5rem] text-center leading-[1.6] mb-12 xl:mb-16 lg:font-medium  ">
 				Hi, I&apos;m Salah assab, a front-end web developer, i turn design into
 				a reactive & responsive web app/site, with the latest technologies. i
 				also write clean and maintainable code.

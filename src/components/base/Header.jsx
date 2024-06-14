@@ -4,7 +4,7 @@ import Button from "../Button";
 
 function Header() {
 	return (
-		<header className="justify-between items-center py-10  opacity-0 animate-[fadeIn-translateDown_1.5s_1.3s_forwards] flex ">
+		<header className="justify-between items-center py-10  opacity-0 animate-[fadeIn-translateDown_1s_1s_forwards] flex ">
 			<Link to="/" className="text-white text-[2.6rem] font-extrabold">
 				Salah <span className="text-brand-500">Asb</span>
 			</Link>
