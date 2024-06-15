@@ -25,7 +25,7 @@ function Hero() {
 				a reactive & responsive web app/site, with the latest technologies. i
 				also write clean and maintainable code.
 			</p>
-			<Button className="px-10 md:px-14 text-[2rem] md:text-[2.2rem] xl:text-[2.6rem] animate-scale-fade opacity-0 scale-[0.7] origin-top">
+			<Button className="px-10 md:px-14 text-[2rem] md:text-[2.2rem] xl:text-[2.6rem] animate-[fadeIn_1s_2s_forwards] opacity-0">
 				See my work
 			</Button>
 		</section>

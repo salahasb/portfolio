@@ -1,26 +1,13 @@
-import { useEffect, useRef } from "react";
+import { useState } from "react";
 
 function Loader({ isPageLoaded }) {
-	const ref = useRef();
+	const [isAnimationEnd, setIsAnimationEnd] = useState(false);
 
-	// useEffect(() => {
-	// 	function removeLoader(e) {
-	// 		console.log(111, e);
-	// 	}
-
-	// 	// if (isPageLoaded) {
-	// 	return ref.current.addEventListener("animationend", removeLoader);
-	// 	// }
-
-	// 	return () => {
-	// 		ref.current.removeEventListener("animationend", removeLoader);
-	// 		console.log("clen-up");
-	// 	};
-	// }, [isPageLoaded]);
+	if (isAnimationEnd) return null;
 
 	return (
 		<div
-			ref={ref}
+			onAnimationEnd={() => setIsAnimationEnd(true)}
 			className={`font-extralight h-full absolute top-0 left-1/2 -translate-x-1/2  center   text-white animate-pulse  tracking-[25px] uppercase ${
 				isPageLoaded ? "!animate-[fadeOut_ease-in_1s_forwards]" : ""
 			}`}

@@ -42,7 +42,7 @@ export default {
 				"scale-fade-subheading": "scale-fade 1s 0.3s forwards",
 				"scroll-indicator": "scroll 2s  ease-out  infinite ",
 				"heading-accent":
-					"accent-scaleX 1.5s   cubic-bezier(0,-0.01,0,.99) 2.3s forwards",
+					"accent-scaleX 1.5s   cubic-bezier(0,-0.01,0,.99) 2s forwards",
 				"scale-fade": "scale-fade 1s 2s forwards",
 			},
 			keyframes: {
