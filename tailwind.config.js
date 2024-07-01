@@ -38,11 +38,11 @@ export default {
 				"clamp-loader": "clamp(1.2rem, 3vw , 2.2rem)",
 			},
 			animation: {
-				"fadeIn-translateUp": "fadeIn-translateUp 1s 1.5s forwards",
+				"fadeIn-translateUp": "fadeIn-translateUp 1s  forwards",
 				"scale-fade-subheading": "scale-fade 1s 0.3s forwards",
 				"scroll-indicator": "scroll 2s  ease-out  infinite ",
 				"heading-accent":
-					"accent-scaleX 1.5s   cubic-bezier(0,-0.01,0,.99) 2s forwards",
+					"accent-scaleX 1.5s   cubic-bezier(0,-0.01,0,.99) 0.3s forwards",
 				"scale-fade": "scale-fade 1s 2s forwards",
 			},
 			keyframes: {
@@ -81,11 +81,11 @@ export default {
 					"100%": { opacity: 1, transform: "scale(1)" },
 				},
 				fadeOut: {
-					// "0%": { opacity: 1 },
+					"0%": { opacity: 1 },
 					"100%": { opacity: 0 },
 				},
 				fadeIn: {
-					// "0%": { opacity: 1 },
+					"0%": { opacity: 0 },
 					"100%": { opacity: 1 },
 				},
 				scaleY: {

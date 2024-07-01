@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { memo, useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-const Particle = ({ className }) => {
+const Particle = memo(function Particle({ isPageLoaded }) {
 	const [init, setInit] = useState(false);
 
 	// this should be run only once per application lifetime
@@ -104,13 +104,15 @@ const Particle = ({ className }) => {
 	if (init) {
 		return (
 			<Particles
-				className={`absolute -z-10 opacity-0 ${className} `}
+				className={`absolute -z-10 opacity-0 ${
+					isPageLoaded ? "animate-[fadeIn_3s_forwards]" : ""
+				}`}
 				id="tsparticles"
 				particlesLoaded={particlesLoaded}
 				options={options}
 			/>
 		);
 	}
-};
+});
 
 export default Particle;
