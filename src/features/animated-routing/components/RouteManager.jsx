@@ -1,23 +1,20 @@
 import Projects1 from "../../../pages/Projects1";
 import { useAnimatedRouting } from "../contexts/AnimatedRoutingContext";
 import Hero from "../../../pages/Hero";
+import Projects from "../../../pages/Projects";
 
+/* this component decide which page should mount/unmount while changing the route */
 function RouteManager() {
 	const { isAnimating, setIsAnimating, prev, isRouteChanged, pathname } =
 		useAnimatedRouting();
-	// const [isAnimating, setIsAnimating] = useState(false);
 
 	return (
 		<>
 			{(pathname === "/" || (prev.current === "/" && isAnimating)) && (
 				<Hero
-					// className={
-					// 	prev.current === "/" ? "animate-[fadeOut_1s_forwards]" : ""
-					// }
-
 					className={
 						isRouteChanged && prev.current === "/"
-							? "animate-[fadeIn-translateUp_0.5s_ease-in_reverse_forwards]"
+							? "animate-[fadeOut_0.5s_forwards]"
 							: ""
 					}
 				/>
@@ -25,15 +22,7 @@ function RouteManager() {
 
 			{(pathname === "/projects" ||
 				(prev.current === "/projects" && isAnimating)) && (
-				// <Projects
-				// 	className={
-				// 		prev.current === "/projects"
-				// 			? "animate-[fadeOut_1s_forwards]"
-				// 			: ""
-				// 	}
-				// />
-				// <div>{`${isAnimating}`}</div>
-				<Projects1
+				<Projects
 					setIsAnimating={setIsAnimating}
 					className={
 						isRouteChanged && prev.current === "/projects"

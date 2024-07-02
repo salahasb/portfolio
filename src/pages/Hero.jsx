@@ -8,7 +8,7 @@ function Hero({ className }) {
 	return (
 		<section
 			onAnimationEnd={(e) => {
-				e.animationName === "fadeIn-translateUp" ? setIsAnimating(false) : "";
+				e.animationName === "fadeOut" ? setIsAnimating(false) : "";
 			}}
 			className={`h-full flex flex-col items-center absolute justify-center -mt-[3%] text-gray-200  ${className}`}
 		>

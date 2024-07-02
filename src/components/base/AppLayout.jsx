@@ -35,7 +35,6 @@ function AppLayout() {
 					<Header />
 
 					<main className="h-[calc(100%-8.9rem)] relative overflow-hidden">
-						{/* this component decide which page should mount/unmount while changing the route */}
 						{!isWaiting && <RouteManager />}
 					</main>
 
