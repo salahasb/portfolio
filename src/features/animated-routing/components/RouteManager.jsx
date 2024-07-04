@@ -1,4 +1,3 @@
-import Projects1 from "../../../pages/Projects1";
 import { useAnimatedRouting } from "../contexts/AnimatedRoutingContext";
 import Hero from "../../../pages/Hero";
 import Projects from "../../../pages/Projects";
@@ -26,7 +25,7 @@ function RouteManager() {
 					setIsAnimating={setIsAnimating}
 					className={
 						isRouteChanged && prev.current === "/projects"
-							? "!animate-[fadeOut_2s_forwards]"
+							? "!animate-[fadeOut_0.5s_forwards]"
 							: ""
 					}
 				/>

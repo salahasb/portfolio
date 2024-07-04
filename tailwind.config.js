@@ -26,7 +26,18 @@ export default {
 				// },
 			},
 			fontFamily: { sans: ["Inter", "sans-serif"] },
-			colors: { brand: { 500: "#ec1352", 900: "#2f0410" } },
+			colors: {
+				brand: {
+					300: "#f47197",
+					400: "#f04275",
+					500: "#ec1352",
+					600: "#bd0f42",
+					700: "#8e0b31",
+					800: "#5e0821",
+					850: "#470619",
+					900: "#2f0410",
+				},
+			},
 			fontSize: {
 				// Heading
 				"clamp-heading-sm": "clamp(2.5rem, 8vw, 14rem)",
