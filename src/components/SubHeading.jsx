@@ -1,9 +1,11 @@
-function SubHeading({ children }) {
+function SubHeading({ children, className }) {
 	return (
-		<h2 className="  mt-8 text-[3rem] tracking-[0.3rem] uppercase font-bold w-fit text-brand-500">
+		<h2
+			className={`flex items-start gap-5 text-[2.4rem]   tracking-[0.5rem] uppercase font-bold w-fit text-brand-500 ${className}`}
+		>
 			<span>&lt; </span>
 
-			<span className="text-white/95 inline-block    font-normal text-[2.4rem] ">
+			<span className="text-white/95 inline-block text-[2.6rem]  font-semibold lg:text-[2.4rem] ">
 				{children}
 				{/* about me */}
 			</span>

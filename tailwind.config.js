@@ -9,6 +9,7 @@ export default {
 				425: "425px",
 				500: "500px",
 				900: "900px",
+				1220: "1220px",
 			},
 			container: {
 				center: true,
@@ -107,9 +108,16 @@ export default {
 						transform: "scaleY(1)",
 					},
 				},
+				fadeInBlur: {
+					"0%": { backdropFilter: "blur(1px) opacity(0)" },
+					"100%": { backdropFilter: "blur(1px) opacity(1)" },
+				},
 				// scaleDown: {
 				// 	transform: "scaleY(100%)",
 				// },
+			},
+			backdropBlur: {
+				xs: "1px",
 			},
 		},
 	},
