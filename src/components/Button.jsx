@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-function Button({ children, className }) {
+function Button({ children, className, onClick }) {
 	return (
-		<Link
-			to="contact"
+		<button
+			onClick={onClick}
 			className={`text-white  font-semibold rounded-lg   bg-brand-500  py-2  ${className}`}
 		>
 			{children}
-		</Link>
+		</button>
 	);
 }
 

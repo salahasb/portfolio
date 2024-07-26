@@ -1,16 +1,17 @@
 import { useEffect } from "react";
 import Button from "../components/Button";
 import { useAnimatedRouting } from "../features/animated-routing/contexts/AnimatedRoutingContext";
+import useAnimatedNavigate from "../features/animated-routing/hooks/useAnimatedNavigate";
 
 function Hero({ className }) {
 	const { setIsAnimating, prev, isRouteChanged } = useAnimatedRouting();
-
+	const handleNavigate = useAnimatedNavigate();
 	return (
 		<section
 			onAnimationEnd={(e) => {
 				e.animationName === "fadeOut" ? setIsAnimating(false) : "";
 			}}
-			className={`h-full flex flex-col items-center absolute justify-center -mt-[3%] text-gray-200  ${className}`}
+			className={`h-full flex flex-col items-center absolute -z-0 justify-center -mt-[3%] text-gray-200  ${className}`}
 		>
 			{/* <span className="  pl-40  text-[1.8rem] font-semibold uppercase tracking-widest text-[#ffffff] ">
 				home
@@ -44,11 +45,17 @@ function Hero({ className }) {
 				Hi, my name is salah
 			</span> */}
 			<p className="animate-[fadeIn-translateUp_1s_0.3s_forwards] opacity-0 translate-y-[10rem] w-[95%] 425:w-[90%] 500:w-[85%]  lg:max-w-[110rem] text-[1.5rem] 425:text-[1.8rem] 500:text-[2rem] md:text-[2.2rem] 900:text-[2.5rem] text-center leading-[1.6] mb-12 xl:mb-16 lg:font-medium  ">
-				Hi, I&apos;m Salah assab, a front-end web developer, i turn design into
+				{/* Hi,  Salah assab, a front-end web developer, i turn design into
 				a reactive & responsive web app/site, with the latest technologies. i
-				also write clean and maintainable code.
+				also write clean and maintainable code. */}
+				Hi, I&apos;m Salah Assab, a front-end web developer. I transform designs
+				into reactive and responsive web apps/sites using the latest
+				technologies. I also prioritize writing clean and maintainable code.
 			</p>
-			<Button className="px-10 md:px-14 text-[2rem] md:text-[2.2rem] xl:text-[2.6rem] animate-[fadeIn_1s_0.5s_forwards] opacity-0">
+			<Button
+				className="px-10 md:px-14 text-[2rem] md:text-[2.2rem] xl:text-[2.6rem] animate-[fadeIn_1s_0.5s_forwards] opacity-0"
+				onClick={() => handleNavigate("/projects")}
+			>
 				See my work
 			</Button>
 		</section>

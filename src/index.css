@@ -33,4 +33,12 @@
 		align-items: center;
 		justify-content: center;
 	}
+
+	.text-fill-color {
+		-webkit-text-fill-color: transparent;
+	}
+
+	.no-text-fill-color {
+		-webkit-text-fill-color: initial;
+	}
 }

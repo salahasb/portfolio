@@ -112,9 +112,6 @@ export default {
 					"0%": { backdropFilter: "blur(1px) opacity(0)" },
 					"100%": { backdropFilter: "blur(1px) opacity(1)" },
 				},
-				// scaleDown: {
-				// 	transform: "scaleY(100%)",
-				// },
 			},
 			backdropBlur: {
 				xs: "1px",

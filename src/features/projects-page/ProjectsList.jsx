@@ -30,8 +30,15 @@ const projects = [
 function ProjectsSlider() {
 	return (
 		<div className=" grid grid-cols-1 500:grid-cols-2 md:grid-cols-3   500:gap-8 gap-y-10 2xl:gap-14 max-w-[150rem]">
-			{projects.map((project) => (
-				<ProjectCard project={project} key={project.name} />
+			{projects.map((project, i) => (
+				<ProjectCard
+					project={project}
+					key={project.name}
+					style={{
+						opacity: 0,
+						animation: `fadeIn-translateUp 1s 0.${i * 2}s  forwards`,
+					}}
+				/>
 			))}
 		</div>
 	);

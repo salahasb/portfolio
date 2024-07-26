@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { routes } from "../utils/constants";
+import { routes } from "../../../utils/constants";
 
 const AnimatedRoutingContext = createContext();
 
