@@ -56,7 +56,7 @@ function Hero({ className }) {
 				className="px-10 md:px-14 text-[2rem] md:text-[2.2rem] xl:text-[2.6rem] animate-[fadeIn_1s_0.5s_forwards] opacity-0"
 				onClick={() => handleNavigate("/projects")}
 			>
-				See my work
+				View my work
 			</Button>
 		</section>
 	);
