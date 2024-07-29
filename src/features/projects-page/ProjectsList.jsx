@@ -8,7 +8,7 @@ const projects = [
 		techStack: ["react-router", "redux"],
 	},
 	{
-		name: "The wild oasis",
+		name: "The Wild Oasis",
 		description: "hotel manager",
 		src: "/projects/the-wild-oasis.webp",
 		techStack: [
@@ -29,7 +29,7 @@ const projects = [
 
 function ProjectsSlider() {
 	return (
-		<div className=" grid grid-cols-1 500:grid-cols-2 md:grid-cols-3 500:gap-8 gap-y-10 2xl:gap-14 max-500:w-[80%] max-w-[150rem]">
+		<div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  md:gap-x-5 xl:gap-14 425:max-sm:w-[80%] max-w-[150rem]">
 			{projects.map((project, i) => (
 				<ProjectCard
 					project={project}

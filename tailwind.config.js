@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import defaultTheme from "tailwindcss/defaultTheme";
+import containerPlugin from "@tailwindcss/container-queries";
 
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -10,6 +11,7 @@ export default {
 				500: "500px",
 				900: "900px",
 				1220: "1220px",
+				1474: "1474px",
 			},
 			container: {
 				center: true,
@@ -48,6 +50,10 @@ export default {
 				"clamp-heading-2xl": "clamp(2.5rem, 8.5vw , 17rem)",
 				// Loader
 				"clamp-loader": "clamp(1.2rem, 3vw , 2.2rem)",
+				// project card
+				"clamp-project-name": "clamp(0rem, 8cqi , 2.5rem)",
+				"clamp-project-description": "clamp(0rem, 7cqi , 2.2rem)",
+				"clamp-project-button": "clamp(1.2rem, 7cqi , 0.5em)",
 			},
 			animation: {
 				"fadeIn-translateUp": "fadeIn-translateUp 1s  forwards",
@@ -118,5 +124,5 @@ export default {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [containerPlugin],
 };
