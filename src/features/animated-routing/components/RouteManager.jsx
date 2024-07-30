@@ -1,6 +1,7 @@
 import { useAnimatedRouting } from "../contexts/AnimatedRoutingContext";
 import Hero from "../../../pages/Hero";
 import Projects from "../../../pages/Projects";
+import About from "../../../pages/About";
 
 /* this component decide which page should mount/unmount while changing the route */
 function RouteManager() {
@@ -32,7 +33,7 @@ function RouteManager() {
 			)}
 
 			{(pathname === "/about-me" || prev.current === "/about-me") && (
-				<div
+				<About
 					onAnimationEnd={(e) => {
 						e.animationName === "fadeOut" ? setIsAnimating(false) : "";
 					}}
@@ -43,7 +44,7 @@ function RouteManager() {
 					}`}
 				>
 					about
-				</div>
+				</About>
 			)}
 
 			{(pathname === "/contact" || prev.current === "/contact") && (

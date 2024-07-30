@@ -8,13 +8,13 @@ function ProjectCard({ project, style }) {
 		<div
 			onAnimationEnd={() => setIsAnimating(false)}
 			style={isAnimating ? style : {}}
-			className={` p-7    lg:p-10 border-white/30 border-[1px]  bg-brand-900 rounded-3xl max-h-full flex flex-col  hover:scale-105 transition-transform duration-300  ease-out   `}
+			className={` p-7 lg:p-10 border-white/30 border-[1px]  bg-brand-900 rounded-3xl max-h-full flex flex-col  hover:scale-105 transition-transform duration-300  ease-out   `}
 		>
 			<img src={project.src} className="rounded-2xl  mb-7" alt={project.name} />
 
 			<div className="@container">
 				<h3
-					className={`mb-12 sm:mb-10 lg:mb-14  leading-9  425:leading-snug   text-clamp-project-name 1474:mb-20   `}
+					className={`mb-12 sm:mb-10 lg:mb-14  leading-9  425:leading-tight   text-clamp-project-name 1474:mb-20   `}
 				>
 					<span className="font-semibold  ">{project.name}</span>
 					<span> - </span>

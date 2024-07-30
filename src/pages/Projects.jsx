@@ -9,7 +9,7 @@ function Projects({ className }) {
 			onAnimationEnd={() => setIsAnimating(false)}
 			className={`text-[4rem] absolute  mx-auto max-md:pb-36 top-[4rem] sm:top-[2rem] max-md:mt-[3rem] md:mt-[10rem] left-0  animate-[fadeIn_1s] w-full flex flex-col justify-center items-center     ${className}`}
 		>
-			<SubHeading className={"mb-[5rem] sm:mb-[3.8rem] "}>
+			<SubHeading className={"mb-[5rem] md:mb-20 xl:mb-28"}>
 				My Projects
 			</SubHeading>
 

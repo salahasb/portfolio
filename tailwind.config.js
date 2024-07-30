@@ -53,7 +53,7 @@ export default {
 				// project card
 				"clamp-project-name": "clamp(0rem, 8cqi , 2.5rem)",
 				"clamp-project-description": "clamp(0rem, 7cqi , 2.2rem)",
-				"clamp-project-button": "clamp(1.2rem, 7cqi , 0.5em)",
+				"clamp-project-button": "clamp(0rem, 6cqi , 0.4em)",
 			},
 			animation: {
 				"fadeIn-translateUp": "fadeIn-translateUp 1s  forwards",
