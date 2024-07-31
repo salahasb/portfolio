@@ -4,6 +4,7 @@ import { useAnimatedRouting } from "../features/animated-routing/contexts/Animat
 
 function Projects({ className }) {
 	const { setIsAnimating } = useAnimatedRouting();
+
 	return (
 		<section
 			onAnimationEnd={() => setIsAnimating(false)}
