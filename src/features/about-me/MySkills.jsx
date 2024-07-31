@@ -1,53 +1,47 @@
-import { PiAirTrafficControlBold, PiSparkleFill } from "react-icons/pi";
 import SkillItem from "./SkillItem";
 
+import {
+	PiDevicesFill,
+	PiLightbulbFill,
+	PiSparkleFill,
+	PiSpeedometerFill,
+} from "react-icons/pi";
+
+import {
+	BiLogoCss3,
+	BiLogoHtml5,
+	BiLogoJavascript,
+	BiLogoReact,
+	BiLogoTailwindCss,
+} from "react-icons/bi";
+
 const skills = [
-	{ name: "Html", icon: <PiSparkleFill /> },
-	{ name: "Css", icon: <PiSparkleFill /> },
-	{ name: "Tailwind", icon: <PiSparkleFill /> },
-	{ name: "Javascript", icon: <PiSparkleFill /> },
-	{ name: "React", icon: <PiSparkleFill /> },
-	{ name: "Responsiveness", icon: <PiSparkleFill /> },
-	{ name: "Problem Solving", icon: <PiSparkleFill /> },
+	{ name: "Html", icon: <BiLogoHtml5 /> },
+	{ name: "Css", icon: <BiLogoCss3 /> },
+	{ name: "Tailwind", icon: <BiLogoTailwindCss /> },
+	{ name: "Javascript", icon: <BiLogoJavascript /> },
+	{ name: "React", icon: <BiLogoReact /> },
+	{ name: "Responsive Design", icon: <PiDevicesFill /> },
 	{ name: "Clean Code", icon: <PiSparkleFill /> },
-	{ name: "Performance & Optimization", icon: <PiSparkleFill /> },
+	{ name: "Performance", icon: <PiSpeedometerFill /> },
+	{ name: "Problem Solving", icon: <PiLightbulbFill /> },
 ];
 
 function MySkills() {
 	return (
-		<div>
-			<h4 className="text-[2.4rem] font-semibold text-[#ddd] mb-10">
+		<div className="h-full">
+			<h4 className="text-[2.4rem] font-semibold text-[#ddd]   mb-12 500:mb-16 md:mb-[5.3rem] w-fit  md:text-[3.5rem]  ">
 				My skills
 			</h4>
 
-			<div className="grid grid-cols-1 gap-5 text-[1.8rem]">
-				{skills.map((ele) => (
-					<SkillItem key={ele} skillName={ele} />
+			<div className="grid grid-cols-1 500:grid-cols-[auto_1fr] gap-5 500:gap-x-10 500:gap-y-10 md:gap-y-12 text-[1.8rem] lg:mt-[6.2rem]">
+				{skills.map((skill) => (
+					<SkillItem
+						key={skill.name}
+						skillName={skill.name}
+						icon={skill.icon}
+					/>
 				))}
-				{/* <div className="flex items-center gap-5">
-					<PiAirTrafficControlBold /> <span>Css</span>
-				</div>
-				<div className="flex items-center gap-5">
-					<PiAirTrafficControlBold /> <span>Tailwind</span>
-				</div>
-				<div className="flex items-center gap-5">
-					<PiAirTrafficControlBold /> <span>Javascript</span>
-				</div>
-				<div className="flex items-center gap-5">
-					<PiAirTrafficControlBold /> <span>React</span>
-				</div>
-				<div className="flex items-center gap-5">
-					<PiAirTrafficControlBold /> <span>Responsiveness</span>
-				</div>
-				<div className="flex items-center gap-5">
-					<PiAirTrafficControlBold /> <span>Problem Solving</span>
-				</div>
-				<div className="flex items-center gap-5">
-					<PiAirTrafficControlBold /> <span>Clean Code</span>
-				</div>
-				<div className="flex items-center gap-5">
-					<PiAirTrafficControlBold /> <span>Performance & Optimization</span>
-				</div> */}
 			</div>
 		</div>
 	);

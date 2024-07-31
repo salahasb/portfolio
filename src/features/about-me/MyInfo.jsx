@@ -1,9 +1,11 @@
 function MyInfo() {
 	return (
-		<div>
-			<h4 className="text-[2.4rem] font-semibold text-[#ddd] mb-10">My info</h4>
+		<div className=" 500:grow">
+			<h4 className="text-[2.4rem] w-fit  font-semibold text-[#ddd] mb-12 lg:mb-16 md:text-[3.5rem]">
+				My info
+			</h4>
 
-			<div className="flex items-center mb-7 gap-8">
+			<div className="flex items-center mb-10 gap-8">
 				<img
 					src="/picture.jpg"
 					alt="my personal picture"
@@ -15,7 +17,7 @@ function MyInfo() {
 				</p>
 			</div>
 
-			<div className="text-[1.5rem] [&>*]:mb-5 ">
+			<div className="text-[1.5rem] [&>*]:mb-5 min-w-[25rem]  max-w-[38rem] ">
 				<p>
 					Hello! I'm Salah Aassab, a front-end web developer specializing in
 					React.js.

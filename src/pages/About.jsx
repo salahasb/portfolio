@@ -4,10 +4,10 @@ import MySkills from "../features/about-me/MySkills";
 
 function About() {
 	return (
-		<section className="w-full flex flex-col items-center pt-20 pb-44">
+		<section className="w-full flex flex-col items-center pt-28 lg:max-xl:pt-40 pb-44">
 			<SubHeading> About me</SubHeading>
 
-			<div className="w-full mt-14 flex flex-col gap-16">
+			<div className="  max-500:px-[5cqi] w-fit  500:mx-auto mt-24 lg:w-full lg:max-w-[110rem] xl:max-w-[120rem]  lg:px-20  flex flex-col   lg:items-start md:flex-row lg:justify-center gap-16">
 				<MyInfo />
 
 				<MySkills />
