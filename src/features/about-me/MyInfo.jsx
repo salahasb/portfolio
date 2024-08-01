@@ -18,22 +18,22 @@ function MyInfo() {
 			</div>
 
 			<div className="text-[1.5rem] [&>*]:mb-6 min-w-[25rem]  max-w-[38rem] lg:max-w-[45rem] lg:text-[1.6rem] text-[#ddd] leading-relaxed ">
-				<p className="opacity-0 animate-[fadeIn-translateUp_0.5s_0.5s_forwards]">
+				<p className="opacity-0 animate-[fadeIn-translateUp_0.8s_0.5s_forwards]">
 					Hello! I&apos;m Salah Aassab, a front-end web developer specializing
 					in React.js.
 				</p>
 
-				<p className="opacity-0 animate-[fadeIn-translateUp_0.5s_0.7s_forwards]">
+				<p className="opacity-0 animate-[fadeIn-translateUp_0.8s_0.7s_forwards]">
 					Since 2020, I&apos;ve been honing my skills in HTML, CSS, and
 					JavaScript, with a particular focus on building responsive and dynamic
 					web applications.
 				</p>
-				<p className="opacity-0 animate-[fadeIn-translateUp_0.5s_0.9s_forwards]">
+				<p className="opacity-0 animate-[fadeIn-translateUp_0.8s_0.9s_forwards]">
 					I&apos;ve completed several projects showcasing my expertise in React
 					and am currently expanding my skills towards becoming a MERN stack
 					developer.
 				</p>
-				<p className="opacity-0 animate-[fadeIn-translateUp_0.5s_1.1s_forwards]">
+				<p className="opacity-0 animate-[fadeIn-translateUp_0.8s_1.1s_forwards]">
 					Let&apos;s work together to bring your project to life with clean,
 					efficient, and effective code.
 				</p>
