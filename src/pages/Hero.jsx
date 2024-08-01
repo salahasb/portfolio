@@ -4,7 +4,7 @@ import { useAnimatedRouting } from "../features/animated-routing/contexts/Animat
 import useAnimatedNavigate from "../features/animated-routing/hooks/useAnimatedNavigate";
 
 function Hero({ className }) {
-	const { setIsAnimating, prev, isRouteChanged } = useAnimatedRouting();
+	const { setIsAnimating } = useAnimatedRouting();
 	const handleNavigate = useAnimatedNavigate();
 	return (
 		<section
@@ -16,12 +16,9 @@ function Hero({ className }) {
 			<h1
 				className={` animate-fadeIn-translateUp translate-y-[10rem] opacity-0 text-center text-clamp-heading-sm 500:text-clamp-heading-md md:text-clamp-heading-lg xl:text-clamp-heading-xl 2xl:text-clamp-heading-2xl font-bold md:font-semibold relative leading-[1.4] 500:leading-[1.3] xl:leading-[1.25] xl:tracking-tight mb-5 xl:mb-10 `}
 			>
-				<span>
-					<span className="    main-heading-accent">Passionate</span>
-					<span className=""> Front-end</span>
-				</span>
+				<span className=" main-heading-accent">Passionate</span>
 
-				<span className=""> Web Developer</span>
+				<span> Front-end Web Developer</span>
 			</h1>
 
 			<p className="animate-[fadeIn-translateUp_1s_0.3s_forwards] opacity-0 translate-y-[10rem] w-[95%] 425:w-[90%] 500:w-[85%]  lg:max-w-[110rem] text-[1.5rem] 425:text-[1.8rem] 500:text-[2rem] md:text-[2.2rem] 900:text-[2.5rem] text-center leading-[1.6] mb-12 xl:mb-16 lg:font-medium  ">

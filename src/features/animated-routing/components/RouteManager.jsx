@@ -23,7 +23,6 @@ function RouteManager() {
 			{(pathname === "/projects" ||
 				(prev.current === "/projects" && isAnimating)) && (
 				<Projects
-					setIsAnimating={setIsAnimating}
 					className={
 						isRouteChanged && prev.current === "/projects"
 							? "!animate-[fadeOut_0.5s_forwards]"
@@ -34,20 +33,15 @@ function RouteManager() {
 
 			{(pathname === "/about-me" || prev.current === "/about-me") && (
 				<About
-					onAnimationEnd={(e) => {
-						e.animationName === "fadeOut" ? setIsAnimating(false) : "";
-					}}
-					className={`absolute  opacity-0 animate-[fadeIn_2s_forwards] ${
+					className={
 						isRouteChanged && prev.current === "/about-me"
-							? "!animate-[fadeOut_2s_forwards]"
+							? "!animate-[fadeOut_0.5s_forwards]"
 							: ""
-					}`}
-				>
-					about
-				</About>
+					}
+				/>
 			)}
 
-			{(pathname === "/contact" || prev.current === "/contact") && (
+			{/* {(pathname === "/contact" || prev.current === "/contact") && (
 				<div
 					onAnimationEnd={(e) => {
 						e.animationName === "fadeOut" ? setIsAnimating(false) : "";
@@ -60,7 +54,7 @@ function RouteManager() {
 				>
 					contact
 				</div>
-			)}
+			)} */}
 		</>
 	);
 }

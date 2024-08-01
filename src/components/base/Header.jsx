@@ -8,9 +8,12 @@ function Header() {
 
 	return (
 		<header className="justify-between items-center py-10 relative z-20 opacity-0 animate-[fadeIn-translateDown_1s_1s_forwards] flex ">
-			<Link to="/" className="text-white text-[2.6rem] font-extrabold">
+			<button
+				onClick={() => handleNavigate("/")}
+				className="text-white text-[2.6rem] font-extrabold"
+			>
 				Salah <span className="text-brand-500">Asb</span>
-			</Link>
+			</button>
 
 			<Navbar />
 

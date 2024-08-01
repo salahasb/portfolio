@@ -28,8 +28,8 @@
 	.main-heading-accent {
 		@apply before:animate-heading-accent before:content-[''] before:w-[98.6%]  before:h-[5%] md:before:h-[3%] before:bg-brand-500   relative before:absolute before:bottom-[0px] lg:before:bottom-[4.5%]  before:left-[1.3%]  before:scale-x-0 before:origin-left;
 	}
-	.about-me-title-accent {
-		@apply before:animate-heading-accent before:content-[''] before:w-[98.6%]  before:h-[6%] before:bg-brand-500   relative before:absolute before:bottom-[0px] xl:before:bottom-[5px]  before:left-[1.3%]  before:scale-x-0 before:origin-left;
+	.about-me-titles-accent {
+		@apply before:animate-[accent-scaleX_0.8s_1.5s_ease_forwards] before:content-[''] before:w-[100%]  before:h-[2px] before:bg-brand-500   relative before:absolute before:bottom-[0px]   before:left-0  before:scale-x-0 before:origin-left;
 	}
 }
 

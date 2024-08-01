@@ -45,9 +45,9 @@ export default {
 				// Heading
 				"clamp-heading-sm": "clamp(2.5rem, 8vw, 14rem)",
 				"clamp-heading-md": "clamp(2.5rem, 7.6vw , 14rem)",
-				"clamp-heading-lg": "clamp(2.5rem, 8vw , 14rem)",
-				"clamp-heading-xl": "clamp(2.5rem, 8.2vw , 14rem)",
-				"clamp-heading-2xl": "clamp(2.5rem, 8.5vw , 17rem)",
+				"clamp-heading-lg": "clamp(2.5rem, 8vw , 15rem)",
+				// "clamp-heading-xl": "clamp(2.5rem, 8vw , 14rem)",
+				// "clamp-heading-2xl": "clamp(2.5rem, 8vw , 17rem)",
 				// Loader
 				"clamp-loader": "clamp(1.2rem, 3vw , 2.2rem)",
 				// project card
@@ -59,8 +59,7 @@ export default {
 				"fadeIn-translateUp": "fadeIn-translateUp 1s  forwards",
 				"scale-fade-subheading": "scale-fade 1s 0.3s forwards",
 				"scroll-indicator": "scroll 2s  ease-out  infinite ",
-				"heading-accent":
-					"accent-scaleX 1.5s   cubic-bezier(0,-0.01,0,.99) 0.3s forwards",
+				"heading-accent": "accent-scaleX 1s   ease 0.8s forwards",
 				"scale-fade": "scale-fade 1s 2s forwards",
 			},
 			keyframes: {
@@ -117,6 +116,10 @@ export default {
 				fadeInBlur: {
 					"0%": { backdropFilter: "blur(1px) opacity(0)" },
 					"100%": { backdropFilter: "blur(1px) opacity(1)" },
+				},
+				ringSpread: {
+					"0%": { boxShadow: "0px 0px 0px 0px #EC1352" },
+					"100%": { boxShadow: "0px 0px 0px 2px #EC1352" },
 				},
 			},
 			backdropBlur: {
