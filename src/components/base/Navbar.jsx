@@ -5,7 +5,7 @@ function Navbar() {
 
 	return (
 		<nav className={`hidden 900:block `}>
-			<ul className="flex  tracking-widest font-semibold text-[2rem] xl:text-[2.4rem] gap-14  lg:gap-16 xl:gap-20   ">
+			<ul className="flex  tracking-widest font-semibold text-[2rem] xl:text-[2.4rem] gap-14  lg:gap-16 xl:gap-20 text-white/90 ">
 				<li>
 					<button onClick={() => handleNavigate("/")}>Home</button>
 				</li>

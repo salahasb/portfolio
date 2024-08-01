@@ -17,9 +17,7 @@ function Hero({ className }) {
 				className={` animate-fadeIn-translateUp translate-y-[10rem] opacity-0 text-center text-clamp-heading-sm 500:text-clamp-heading-md md:text-clamp-heading-lg xl:text-clamp-heading-xl 2xl:text-clamp-heading-2xl font-bold md:font-semibold relative leading-[1.4] 500:leading-[1.3] xl:leading-[1.25] xl:tracking-tight mb-5 xl:mb-10 `}
 			>
 				<span>
-					<span className="   before:animate-heading-accent before:content-[''] before:w-[98.6%]  before:h-[6%] before:bg-brand-500   relative before:absolute before:bottom-[0px] xl:before:bottom-[5px]  before:left-[1.3%]  before:scale-x-0 before:origin-left">
-						Passionate
-					</span>
+					<span className="    main-heading-accent">Passionate</span>
 					<span className=""> Front-end</span>
 				</span>
 

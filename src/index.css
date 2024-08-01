@@ -25,6 +25,12 @@
 }
 
 @layer components {
+	.main-heading-accent {
+		@apply before:animate-heading-accent before:content-[''] before:w-[98.6%]  before:h-[5%] md:before:h-[3%] before:bg-brand-500   relative before:absolute before:bottom-[0px] lg:before:bottom-[4.5%]  before:left-[1.3%]  before:scale-x-0 before:origin-left;
+	}
+	.about-me-title-accent {
+		@apply before:animate-heading-accent before:content-[''] before:w-[98.6%]  before:h-[6%] before:bg-brand-500   relative before:absolute before:bottom-[0px] xl:before:bottom-[5px]  before:left-[1.3%]  before:scale-x-0 before:origin-left;
+	}
 }
 
 @layer utilities {
