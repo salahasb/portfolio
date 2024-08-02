@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Button from "../components/Button";
 import { useAnimatedRouting } from "../features/animated-routing/contexts/AnimatedRoutingContext";
 import useAnimatedNavigate from "../features/animated-routing/hooks/useAnimatedNavigate";
@@ -6,6 +5,7 @@ import useAnimatedNavigate from "../features/animated-routing/hooks/useAnimatedN
 function Hero({ className }) {
 	const { setIsAnimating } = useAnimatedRouting();
 	const handleNavigate = useAnimatedNavigate();
+
 	return (
 		<section
 			onAnimationEnd={(e) => {
@@ -21,17 +21,17 @@ function Hero({ className }) {
 				<span> Front-end Web Developer</span>
 			</h1>
 
-			<p className="animate-[fadeIn-translateUp_1s_0.3s_forwards] opacity-0 translate-y-[10rem] w-[95%] 425:w-[90%] 500:w-[85%]  lg:max-w-[110rem] text-[1.5rem] 425:text-[1.8rem] 500:text-[2rem] md:text-[2.2rem] 900:text-[2.5rem] text-center leading-[1.6] mb-12 xl:mb-16 lg:font-medium  ">
+			<p className="animate-[fadeIn-translateUp_1s_0.3s_forwards] opacity-0 translate-y-[10rem] w-[95%] 425:w-[90%] 500:w-[85%] lg:max-w-[90rem] xl:max-w-[100rem] text-[1.4rem] 425:text-[1.6rem] 500:text-[1.8rem] md:text-[2rem] 900:text-[2rem] lg:text-[2.2rem] xl:text-[2.4rem]   text-center leading-[1.6] mb-12 xl:mb-16 lg:font-medium  ">
 				I transform designs into reactive and responsive web apps/sites using
 				the latest technologies. I also prioritize writing clean and
 				maintainable code.
 			</p>
 
 			<Button
-				className="px-10 md:px-14 text-[2rem] md:text-[2.2rem] xl:text-[2.6rem] animate-[fadeIn_1s_0.5s_forwards] opacity-0"
+				className="px-8 lg:px-12 text-[1.8rem] md:text-[2rem] lg:text-[2.2rem]  animate-[fadeIn_1s_0.5s_forwards] opacity-0  hover:scale-105 "
 				onClick={() => handleNavigate("/projects")}
 			>
-				View my work
+				See My Work
 			</Button>
 		</section>
 	);

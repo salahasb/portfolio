@@ -34,6 +34,7 @@ export default {
 					300: "#f47197",
 					400: "#f04275",
 					500: "#ec1352",
+					550: "#d4114a",
 					600: "#bd0f42",
 					700: "#8e0b31",
 					800: "#5e0821",
@@ -53,13 +54,13 @@ export default {
 				// project card
 				"clamp-project-name": "clamp(0rem, 8cqi , 2.5rem)",
 				"clamp-project-description": "clamp(0rem, 7cqi , 2.2rem)",
-				"clamp-project-button": "clamp(0rem, 6cqi , 0.4em)",
+				"clamp-project-button": "clamp(0rem, 6cqi , 0.5em)",
 			},
 			animation: {
 				"fadeIn-translateUp": "fadeIn-translateUp 1s  forwards",
 				"scale-fade-subheading": "scale-fade 1s 0.3s forwards",
 				"scroll-indicator": "scroll 2s  ease-out  infinite ",
-				"heading-accent": "accent-scaleX 1s   ease 0.8s forwards",
+				"heading-accent": "accent-scaleX 1.5s   ease 0.8s forwards",
 				"scale-fade": "scale-fade 1s 2s forwards",
 			},
 			keyframes: {

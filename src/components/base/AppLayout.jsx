@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import Loader from "./Loader.jsx";
 import RouteManager from "../../features/animated-routing/components/RouteManager.jsx";
 import { AnimatedRoutingProvider } from "../../features/animated-routing/contexts/AnimatedRoutingContext.jsx";
-import ProjectCard from "../../features/projects-page/ProjectCard.jsx";
 
 // the page will begin with "loading"  and after that, the page will render after it completely loaded
 function AppLayout() {

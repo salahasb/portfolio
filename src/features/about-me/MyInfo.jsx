@@ -1,9 +1,9 @@
 function MyInfo() {
 	return (
 		<div className=" 500:grow">
-			<h4 className="text-[2.8rem] w-fit  font-semibold text-[#fff]/90 mb-16 md:mb-[4.5rem]  md:text-[3.5rem] animate-fadeIn-translateUp about-me-titles-accent ">
+			<h3 className="text-[2.8rem] w-fit  font-semibold text-[#fff]/90 mb-16 md:mb-[4.5rem]  md:text-[3.5rem] animate-fadeIn-translateUp about-me-titles-accent ">
 				My info
-			</h4>
+			</h3>
 
 			<div className="flex items-center mb-10 gap-8 opacity-0 animate-[fadeIn-translateUp_1s_0.2s_forwards]  ">
 				<img

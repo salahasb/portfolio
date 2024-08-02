@@ -30,9 +30,9 @@ const skills = [
 function MySkills() {
 	return (
 		<div className="h-full">
-			<h4 className="text-[2.8rem] font-semibold text-[#ddd]  mb-16 500:mb-16 md:mb-[6.4rem] w-fit  md:text-[3.5rem]  animate-fadeIn-translateUp about-me-titles-accent ">
+			<h3 className="text-[2.8rem] font-semibold text-[#ddd]  mb-16 500:mb-16 md:mb-[6.4rem] w-fit  md:text-[3.5rem]  animate-fadeIn-translateUp about-me-titles-accent ">
 				My skills
-			</h4>
+			</h3>
 
 			<div className="grid grid-cols-1 500:grid-cols-[auto_1fr] gap-5 500:gap-10 md:gap-y-12 md:gap-x-2 text-[1.8rem] lg:mt-[6rem] text-[#ddd]">
 				{skills.map((skill, i) => (

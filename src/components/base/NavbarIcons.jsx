@@ -1,10 +1,10 @@
-import { PiBriefcase, PiEnvelopeSimple, PiUser, PiHouse } from "react-icons/pi";
-import { NavLink, useLocation } from "react-router-dom";
+import { PiBriefcase, PiUser, PiHouse } from "react-icons/pi";
+import { useLocation } from "react-router-dom";
 import useAnimatedNavigate from "../../features/animated-routing/hooks/useAnimatedNavigate";
 
 function NavbarIcons() {
 	const { pathname } = useLocation();
-	const handlleNavigate = useAnimatedNavigate();
+	const handleNavigate = useAnimatedNavigate();
 
 	return (
 		<nav>
@@ -12,7 +12,7 @@ function NavbarIcons() {
 				<li>
 					<button
 						className="px-8 py-5 inline-block"
-						onClick={() => handlleNavigate("/")}
+						onClick={() => handleNavigate("/")}
 					>
 						<PiHouse
 							size={25}
@@ -25,7 +25,7 @@ function NavbarIcons() {
 				<li>
 					<button
 						className="px-8 py-5 inline-block"
-						onClick={() => handlleNavigate("/projects")}
+						onClick={() => handleNavigate("/projects")}
 					>
 						<PiBriefcase
 							size={25}
@@ -38,7 +38,7 @@ function NavbarIcons() {
 				<li>
 					<button
 						className="px-8 py-5 inline-block"
-						onClick={() => handlleNavigate("/about-me")}
+						onClick={() => handleNavigate("/about-me")}
 					>
 						<PiUser
 							size={25}
@@ -49,7 +49,7 @@ function NavbarIcons() {
 					</button>
 				</li>
 				{/* <li>
-					<button  className="px-8 py-5 inline-block " onClick={()=>handlleNavigate()}>
+					<button  className="px-8 py-5 inline-block " onClick={()=>handleNavigate()}>
 						<PiEnvelopeSimple
 						 size={25}
 							className={`" ${
