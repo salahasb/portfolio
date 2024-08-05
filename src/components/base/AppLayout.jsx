@@ -19,11 +19,24 @@ function AppLayout() {
 			setTimeout(() => setIsWaiting(false), 1500);
 		};
 
-		window.addEventListener("load", handlePageLoad);
+		if (document.readyState === "complete") {
+			handlePageLoad();
+		} else {
+			window.addEventListener("load", handlePageLoad);
 
-		return () => {
-			window.removeEventListener("load", handlePageLoad);
-		};
+			return () => {
+				window.removeEventListener("load", handlePageLoad);
+			};
+		}
+		// window.addEventListener("load",
+		//  handlePageLoad
+		// );
+
+		// return () => {
+		// window.removeEventListener("load",
+		//  handlePageLoad
+		// );
+		// };
 	}, []);
 
 	return (
