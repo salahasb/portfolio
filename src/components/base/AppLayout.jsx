@@ -28,7 +28,7 @@ function AppLayout() {
 
 	return (
 		<div className="h-dvh px-10 500:px-14 md:px-20 xl:px-36 max-w-[1900px] mx-auto relative">
-			<Loader isPageLoaded={isPageLoaded} /> */}
+			<Loader isPageLoaded={isPageLoaded} />
 			{isPageLoaded && (
 				<AnimatedRoutingProvider>
 					<Header />
