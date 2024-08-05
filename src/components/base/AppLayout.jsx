@@ -28,23 +28,24 @@ function AppLayout() {
 
 	return (
 		<div className="h-dvh px-10 500:px-14 md:px-20 xl:px-36 max-w-[1900px] mx-auto relative">
-			<Loader isPageLoaded={isPageLoaded} />
-
-			{isPageLoaded && (
-				<AnimatedRoutingProvider>
-					<Header />
-
+			{/* <Loader isPageLoaded={isPageLoaded} /> */}
+			{/* {isPageLoaded && ( */}
+			<AnimatedRoutingProvider>
+				<Header />
+				{/* 
 					<main className="h-[calc(100%-8.9rem)] relative  ">
-						{!isWaiting && <RouteManager />}
-					</main>
+						{!isWaiting &&  */}
+				<RouteManager />
+				{/* // 	} */}
+				{/* // </main> */}
 
-					<Particle isPageLoaded={isPageLoaded} />
+				<Particle isPageLoaded={isPageLoaded} />
 
-					<NavbarIcons />
+				<NavbarIcons />
 
-					<ScrollIndicator />
-				</AnimatedRoutingProvider>
-			)}
+				<ScrollIndicator />
+			</AnimatedRoutingProvider>
+			{/* // )} */}
 		</div>
 	);
 }
