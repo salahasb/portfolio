@@ -39,7 +39,7 @@ function AppLayout() {
 
 					<Particle isPageLoaded={isPageLoaded} />
 
-					<NavbarIcons />
+					{/* <NavbarIcons /> */}
 
 					<ScrollIndicator />
 				</AnimatedRoutingProvider>
