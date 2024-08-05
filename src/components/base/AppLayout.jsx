@@ -19,10 +19,10 @@ function AppLayout() {
 			setTimeout(() => setIsWaiting(false), 1500);
 		};
 
-		window.addEventListener("DOMContentLoaded", handlePageLoad);
+		window.addEventListener("load", handlePageLoad);
 
 		return () => {
-			window.removeEventListener("DOMContentLoaded", handlePageLoad);
+			window.removeEventListener("load", handlePageLoad);
 		};
 	}, []);
 
