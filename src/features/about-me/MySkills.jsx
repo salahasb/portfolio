@@ -34,7 +34,7 @@ function MySkills() {
 				My skills
 			</h3>
 
-			<div className="grid grid-cols-1 500:grid-cols-[auto_1fr] gap-5 500:gap-10 md:gap-y-12 md:gap-x-2 text-[1.8rem] lg:mt-[6rem] text-[#ddd]">
+			<div className="grid grid-cols-1 500:grid-cols-[auto_1fr] gap-5 500:gap-10 md:gap-y-12 md:gap-x-2 lg:gap-x-10 text-[1.8rem] lg:mt-[6rem] text-[#ddd]">
 				{skills.map((skill, i) => (
 					<SkillItem
 						key={skill.name}

@@ -17,7 +17,7 @@ function MyInfo() {
 				</p>
 			</div>
 
-			<div className="text-[1.5rem] [&>*]:mb-6 min-w-[25rem]  max-w-[38rem] lg:max-w-[45rem] lg:text-[1.6rem] text-[#ddd] leading-relaxed ">
+			<div className="text-[1.5rem] [&>*]:mb-6 min-w-[28rem]  max-w-[36rem]  lg:text-[1.6rem] text-[#ddd] leading-relaxed ">
 				<p className="opacity-0 animate-[fadeIn-translateUp_0.8s_0.5s_forwards]">
 					Hello! I&apos;m Salah Aassab, a front-end web developer specializing
 					in React.js.
