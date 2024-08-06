@@ -28,15 +28,6 @@ function AppLayout() {
 				window.removeEventListener("load", handlePageLoad);
 			};
 		}
-		// window.addEventListener("load",
-		//  handlePageLoad
-		// );
-
-		// return () => {
-		// window.removeEventListener("load",
-		//  handlePageLoad
-		// );
-		// };
 	}, []);
 
 	return (

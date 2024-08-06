@@ -60,7 +60,7 @@ export default {
 				"fadeIn-translateUp": "fadeIn-translateUp 1s  forwards",
 				"scale-fade-subheading": "scale-fade 1s 0.3s forwards",
 				"scroll-indicator": "scroll 2s  ease-out  infinite ",
-				"heading-accent": "accent-scaleX 1.5s   ease 0.8s forwards",
+				"heading-accent": "accent-scaleX 1.5s   ease 1.2s forwards",
 				"scale-fade": "scale-fade 1s 2s forwards",
 			},
 			keyframes: {
