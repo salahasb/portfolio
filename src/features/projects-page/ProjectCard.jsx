@@ -13,7 +13,7 @@ function ProjectCard({ project, style }) {
 			<img
 				src={project.src}
 				className="rounded-2xl    aspect-video w-full mb-7"
-				alt={project.name}
+				alt={`${project.name} app desktop screenshot`}
 			/>
 
 			<div className="@container">
@@ -31,12 +31,12 @@ function ProjectCard({ project, style }) {
 				<ul className="flex  ">
 					{project.techStack.map((tool) => (
 						<li
-							className=" center p-[2cqi] -mr-2  bg-brand-900 rounded-full border-gray-700 border"
+							className=" center p-[2cqi] aspect-square -mr-2  bg-brand-900 rounded-full border-white/30  border"
 							key={tool}
 						>
 							<img
 								src={`/icons/${tool}.png`}
-								className="w-[8cqi] max-w-6 aspect-square"
+								className="w-[8cqi] max-w-6 "
 								alt=""
 							/>
 						</li>

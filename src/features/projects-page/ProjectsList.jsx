@@ -22,7 +22,7 @@ const projects = [
 	{
 		name: "WorldWise",
 		description: "travel tracker",
-		src: "/projects/the-world-wise.webp",
+		src: "/projects/worldwise.webp",
 		techStack: ["leaflet", "react-router"],
 	},
 ];
