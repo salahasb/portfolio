@@ -4,13 +4,13 @@ const projects = [
 	{
 		name: "Forkify",
 		description: "recipe finder",
-		src: "/projects/forkify.webp",
+		src: "/projects/forkify",
 		techStack: ["react-router", "redux"],
 	},
 	{
 		name: "The Wild Oasis",
 		description: "hotel manager",
-		src: "/projects/the-wild-oasis.webp",
+		src: "/projects/the-wild-oasis",
 		techStack: [
 			"styled-components",
 			"react-router",
@@ -22,7 +22,7 @@ const projects = [
 	{
 		name: "WorldWise",
 		description: "travel tracker",
-		src: "/projects/worldwise.webp",
+		src: "/projects/worldwise",
 		techStack: ["leaflet", "react-router"],
 	},
 ];

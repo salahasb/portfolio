@@ -6,11 +6,13 @@ function MyInfo() {
 			</h3>
 
 			<div className="flex items-center mb-10 gap-8 opacity-0 animate-[fadeIn-translateUp_1s_0.2s_forwards]  ">
-				<img
-					src="/picture.webp"
-					alt="my personal picture"
-					className="w-32 rounded-full  animate-[ringSpread_1s_1.3s_forwards] aspect-square "
-				/>
+				<div className="  border-brand-500  border-2 rounded-full overflow-hidden ">
+					<img
+						src="/picture.webp"
+						alt="my personal picture"
+						className="w-32  aspect-square opacity-0 animate-[fadeIn_1s_1.5s_forwards] "
+					/>
+				</div>
 
 				<p className=" text-[2.2rem]  font-semibold tracking-wider text-[#fff]/90  ">
 					Salah Aassab

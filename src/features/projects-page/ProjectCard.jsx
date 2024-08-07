@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function ProjectCard({ project, style }) {
 	const [isAnimating, setIsAnimating] = useState(true);
+	const [imageHasLoaded, setImageHasLoaded] = useState(false);
 
 	return (
 		<div
@@ -10,11 +11,19 @@ function ProjectCard({ project, style }) {
 			style={isAnimating ? style : {}}
 			className={` p-7 lg:p-10 border-white/30 border-[1px]  bg-brand-900 rounded-3xl max-h-full flex flex-col  hover:scale-105 transition-transform duration-300  ease-out   `}
 		>
-			<img
-				src={project.src}
-				className="rounded-2xl    aspect-video w-full mb-7"
-				alt={`${project.name} app desktop screenshot`}
-			/>
+			<div
+				style={{ backgroundImage: `url('${project.src}-small.jpg')` }}
+				className={`aspect-video w-full mb-7 rounded-2xl overflow-hidden  bg-no-repeat bg-contain bg-center `}
+			>
+				<img
+					onLoad={() => setImageHasLoaded(true)}
+					src={`${project.src}.webp`}
+					className={`opacity-0 transition-opacity duration-500 ${
+						imageHasLoaded ? "opacity-100" : ""
+					} `}
+					alt={`${project.name} app desktop screenshot`}
+				/>
+			</div>
 
 			<div className="@container">
 				<h3
