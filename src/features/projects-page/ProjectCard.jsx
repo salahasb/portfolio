@@ -10,7 +10,11 @@ function ProjectCard({ project, style }) {
 			style={isAnimating ? style : {}}
 			className={` p-7 lg:p-10 border-white/30 border-[1px]  bg-brand-900 rounded-3xl max-h-full flex flex-col  hover:scale-105 transition-transform duration-300  ease-out   `}
 		>
-			<img src={project.src} className="rounded-2xl  mb-7" alt={project.name} />
+			<img
+				src={project.src}
+				className="rounded-2xl    aspect-video w-full mb-7"
+				alt={project.name}
+			/>
 
 			<div className="@container">
 				<h3
@@ -23,7 +27,6 @@ function ProjectCard({ project, style }) {
 					</span>
 				</h3>
 			</div>
-
 			<div className="flex justify-between items-center mt-auto @container">
 				<ul className="flex  ">
 					{project.techStack.map((tool) => (
@@ -33,7 +36,7 @@ function ProjectCard({ project, style }) {
 						>
 							<img
 								src={`/icons/${tool}.png`}
-								className="w-[8cqi] max-w-6"
+								className="w-[8cqi] max-w-6 aspect-square"
 								alt=""
 							/>
 						</li>

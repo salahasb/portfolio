@@ -8,9 +8,9 @@ function Projects({ className }) {
 	return (
 		<section
 			onAnimationEnd={() => setIsAnimating(false)}
-			className={`text-[4rem] absolute  mx-auto max-md:pb-36  md:h-[80%]    left-0   w-full flex flex-col justify-center items-center     ${className}`}
+			className={`text-[4rem] absolute  mx-auto max-md:pb-36  md:h-[85%]    left-0   w-full flex flex-col justify-center items-center     ${className}`}
 		>
-			<SubHeading className={"  md:mb-20 xl:mb-[6rem]"}>My Projects</SubHeading>
+			<SubHeading className="md:mb-20 xl:mb-[6rem]">My Projects</SubHeading>
 
 			<ProjectsList />
 		</section>
