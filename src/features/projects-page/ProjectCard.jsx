@@ -36,6 +36,7 @@ function ProjectCard({ project, style }) {
 					</span>
 				</h3>
 			</div>
+
 			<div className="flex justify-between items-center mt-auto @container">
 				<ul className="flex  ">
 					{project.techStack.map((tool) => (
