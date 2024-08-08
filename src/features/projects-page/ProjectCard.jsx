@@ -9,7 +9,7 @@ function ProjectCard({ project, style }) {
 		<div
 			onAnimationEnd={() => setIsAnimating(false)}
 			style={isAnimating ? style : {}}
-			className={` p-7 lg:p-10 border-white/30 border-[1px]  bg-brand-900 rounded-3xl max-h-full flex flex-col  hover:scale-105 transition-transform duration-300  ease-out   `}
+			className={` p-7 xl:p-10 border-white/30 border-[1px]  bg-brand-900 rounded-3xl max-h-full flex flex-col  hover:scale-105 transition-transform duration-300  ease-out   `}
 		>
 			<div
 				style={{ backgroundImage: `url('${project.src}-small.jpg')` }}
@@ -47,7 +47,7 @@ function ProjectCard({ project, style }) {
 							<img
 								src={`/icons/${tool}.png`}
 								className="w-[8cqi] max-w-6 "
-								alt=""
+								alt={`${tool} library`}
 							/>
 						</li>
 					))}

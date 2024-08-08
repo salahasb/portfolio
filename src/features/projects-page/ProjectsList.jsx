@@ -29,7 +29,7 @@ const projects = [
 
 function ProjectsSlider() {
 	return (
-		<div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  md:gap-x-5 xl:gap-14 425:max-sm:w-[80%] max-w-[150rem] w-full">
+		<div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  md:gap-x-5 lg:gap-14 425:max-sm:w-[80%] max-w-[150rem] w-full">
 			{projects.map((project, i) => (
 				<ProjectCard
 					project={project}
