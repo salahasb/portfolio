@@ -51,10 +51,16 @@ export default {
 				// "clamp-heading-2xl": "clamp(2.5rem, 8vw , 17rem)",
 				// Loader
 				"clamp-loader": "clamp(1.2rem, 3vw , 2.2rem)",
+
 				// project card
 				"clamp-project-name": "clamp(0rem, 8cqi , 2.5rem)",
 				"clamp-project-description": "clamp(0rem, 7cqi , 2.2rem)",
 				"clamp-project-button": "clamp(0rem, 6cqi , 0.5em)",
+
+				// project detail
+				"clamp-project-detail-name": "clamp(0rem, 8vw , 7rem)",
+				"clamp-project-detail-description": "clamp(0rem, 4.5vw , 2rem)",
+				"clamp-project-detail-visit": "clamp(0rem, 4.5vw , 2.6rem)",
 			},
 			animation: {
 				"fadeIn-translateUp": "fadeIn-translateUp 1s  forwards",

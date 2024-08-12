@@ -2,6 +2,8 @@ import { useAnimatedRouting } from "../contexts/AnimatedRoutingContext";
 import Hero from "../../../pages/hero-page/Hero";
 import Projects from "../../../pages/my-projects/Projects";
 import About from "../../../pages/about-me/About";
+import { myProjects, routes } from "../../../utils/constants";
+import ProjectDetail from "../../../pages/project-detail/ProjectDetail";
 
 /* this component decide which page should mount/unmount while changing the route */
 function RouteManager() {
@@ -9,6 +11,37 @@ function RouteManager() {
 
 	return (
 		<>
+			{routes.map(
+				({ path, component: Component }) =>
+					(pathname === path || (prev.current === path && isAnimating)) && (
+						<Component
+							key={path}
+							className={
+								isRouteChanged && prev.current === path
+									? "!animate-[fadeOut_0.5s_forwards]"
+									: ""
+							}
+						/>
+					)
+			)}
+
+			{myProjects.map(
+				(project) =>
+					(pathname === project.path ||
+						(prev.current === project.path && isAnimating)) && (
+						<ProjectDetail
+							key={project.path}
+							project={project}
+							className={
+								isRouteChanged && prev.current === project.path
+									? "!animate-[fadeOut_0.5s_forwards]"
+									: ""
+							}
+						/>
+					)
+			)}
+
+			{/* 
 			{(pathname === "/" || (prev.current === "/" && isAnimating)) && (
 				<Hero
 					className={
@@ -38,7 +71,7 @@ function RouteManager() {
 							: ""
 					}
 				/>
-			)}
+			)} */}
 
 			{/* {(pathname === "/contact" || prev.current === "/contact") && (
 				<div

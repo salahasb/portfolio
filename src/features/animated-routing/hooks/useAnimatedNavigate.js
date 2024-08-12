@@ -1,17 +1,15 @@
-import { useLocation, useNavigate } from "react-router-dom";
 import { useAnimatedRouting } from "../contexts/AnimatedRoutingContext";
 import { routes } from "../../../utils/constants";
 
 function useAnimatedNavigate() {
-	const { pathname } = useLocation();
-	const navigate = useNavigate();
-	const { setIsAnimating, setCurRouteIndex } = useAnimatedRouting();
+	const { setIsAnimating, pathname, navigate, setCurRouteIndex } =
+		useAnimatedRouting();
 
 	function handleNavigate(path) {
 		if (pathname === path) return;
 
 		setIsAnimating(true);
-		setCurRouteIndex(routes.indexOf(path));
+		setCurRouteIndex(routes.findIndex((route) => route.path === path));
 
 		navigate(path);
 	}

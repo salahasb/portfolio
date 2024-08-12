@@ -19,7 +19,7 @@ function AnimatedRoutingProvider({ children }) {
 
 	// this state hold the index of the current route in the "routes" array to be able to know which the next/prev route when scrolling
 	const [curRouteIndex, setCurRouteIndex] = useState(() =>
-		routes.indexOf(pathname)
+		routes.findIndex((route) => route.path === pathname)
 	);
 
 	// to set the current route as a prev route for the next re-render whenever the route has changed
@@ -30,18 +30,23 @@ function AnimatedRoutingProvider({ children }) {
 	// to listen to scroll event in order to set next/prev route
 	useEffect(() => {
 		const callback = function (e) {
-			// early return to prevent navigation while still animating
+			// early return to prevent scrolling navigation while still animating
 			if (isAnimating) return;
+
+			// early return to prevent scrolling navigation if we are in "ProjectDetail" page
+			if (!routes.some((route) => route.path === pathname)) return;
 
 			const scrollDirection = e.deltaY > 0 ? "down" : "up";
 
 			const isLastRoute = curRouteIndex === routes.length - 1;
 			const isFirstRoute = curRouteIndex === 0;
 
-			const nextRoute = isLastRoute ? routes[0] : routes[curRouteIndex + 1];
+			const nextRoute = isLastRoute
+				? routes[0].path
+				: routes[curRouteIndex + 1].path;
 			const prevRoute = isFirstRoute
-				? routes.at(-1)
-				: routes[curRouteIndex - 1];
+				? routes.at(-1).path
+				: routes[curRouteIndex - 1].path;
 
 			if (scrollDirection === "down") {
 				navigate(nextRoute);
@@ -74,6 +79,7 @@ function AnimatedRoutingProvider({ children }) {
 				isRouteChanged,
 				pathname,
 				setCurRouteIndex,
+				navigate,
 			}}
 		>
 			{children}
