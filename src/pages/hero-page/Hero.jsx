@@ -1,6 +1,6 @@
-import Button from "../components/Button";
-import { useAnimatedRouting } from "../features/animated-routing/contexts/AnimatedRoutingContext";
-import useAnimatedNavigate from "../features/animated-routing/hooks/useAnimatedNavigate";
+import Button from "../../components/Button";
+import { useAnimatedRouting } from "../../features/animated-routing/contexts/AnimatedRoutingContext";
+import useAnimatedNavigate from "../../features/animated-routing/hooks/useAnimatedNavigate";
 
 function Hero({ className }) {
 	const { setIsAnimating } = useAnimatedRouting();

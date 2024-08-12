@@ -1,7 +1,7 @@
-import SubHeading from "../components/SubHeading";
-import MyInfo from "../features/about-me/MyInfo";
-import MySkills from "../features/about-me/MySkills";
-import { useAnimatedRouting } from "../features/animated-routing/contexts/AnimatedRoutingContext";
+import SubHeading from "../../components/SubHeading";
+import MyInfo from "./MyInfo";
+import MySkills from "./MySkills";
+import { useAnimatedRouting } from "../../features/animated-routing/contexts/AnimatedRoutingContext";
 
 function About({ className }) {
 	const { setIsAnimating } = useAnimatedRouting();

@@ -1,6 +1,6 @@
-import ProjectsList from "../features/projects-page/ProjectsList";
-import SubHeading from "../components/SubHeading";
-import { useAnimatedRouting } from "../features/animated-routing/contexts/AnimatedRoutingContext";
+import ProjectsList from "./ProjectsList";
+import SubHeading from "../../components/SubHeading";
+import { useAnimatedRouting } from "../../features/animated-routing/contexts/AnimatedRoutingContext";
 
 function Projects({ className }) {
 	const { setIsAnimating } = useAnimatedRouting();

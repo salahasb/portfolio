@@ -1,12 +1,11 @@
 import { useAnimatedRouting } from "../contexts/AnimatedRoutingContext";
-import Hero from "../../../pages/Hero";
-import Projects from "../../../pages/Projects";
-import About from "../../../pages/About";
+import Hero from "../../../pages/hero-page/Hero";
+import Projects from "../../../pages/my-projects/Projects";
+import About from "../../../pages/about-me/About";
 
 /* this component decide which page should mount/unmount while changing the route */
 function RouteManager() {
-	const { isAnimating, setIsAnimating, prev, isRouteChanged, pathname } =
-		useAnimatedRouting();
+	const { isAnimating, prev, isRouteChanged, pathname } = useAnimatedRouting();
 
 	return (
 		<>
