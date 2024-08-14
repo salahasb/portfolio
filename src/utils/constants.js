@@ -15,7 +15,8 @@ export const myProjects = [
 		path: "/projects/forkify",
 		description: "recipe finder",
 		src: "/projects/forkify",
-		techStack: ["react-router", "redux"],
+		techStack: ["react", "react-router", "redux"],
+		role: "front-end",
 	},
 	{
 		name: "The Wild Oasis",
@@ -23,18 +24,21 @@ export const myProjects = [
 		description: "hotel manager",
 		src: "/projects/the-wild-oasis",
 		techStack: [
+			"react",
 			"styled-components",
 			"react-router",
 			"supabase",
 			"react-query",
 			"react-hook-form",
 		],
+		role: "full-stack",
 	},
 	{
 		name: "WorldWise",
 		path: "/projects/worldwise",
 		description: "travel tracker",
 		src: "/projects/worldwise",
-		techStack: ["leaflet", "react-router"],
+		techStack: ["react", "leaflet", "react-router"],
+		role: "front-end",
 	},
 ];
