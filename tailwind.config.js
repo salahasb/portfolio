@@ -59,8 +59,6 @@ export default {
 
 				// project detail
 				"clamp-project-detail-name": "clamp(0rem, 8vw , 7rem)",
-				"clamp-project-detail-description": "clamp(0rem, 4.5vw , 2rem)",
-				"clamp-project-detail-visit": "clamp(0rem, 4.5vw , 2.6rem)",
 			},
 			animation: {
 				"fadeIn-translateUp": "fadeIn-translateUp 1s  forwards",
