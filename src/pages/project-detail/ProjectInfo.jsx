@@ -39,19 +39,17 @@ function ProjectInfo({ project }) {
 			</div>
 
 			<div className="flex flex-col lg:justify-self-end row-start-1 row-end-2 col-start-3 sm:col-start-3 lg:col-start-4 ">
-				<span className="uppercase   mb-[clamp(0.5rem,1.8vw,1.25rem)]  text-[#ddd] font-bold tracking-[0.2rem]     text-[clamp(0rem,2.2vw,1.6rem)] ">
+				<span className="uppercase   mb-[clamp(0.5rem,1.2vw,1.4rem)]  text-[#ccc] font-bold tracking-[0.2rem]     text-[clamp(0rem,2.2vw,1.6rem)] ">
 					Url
 				</span>
-				<Button className=" bg-brand-500 px-[clamp(0rem,2.2vw,1.6rem)] py-[clamp(0rem,0.6vw,0.1rem)]   justify-self-center  w-fit ">
+				<Button className=" bg-brand-500 text-[clamp(0rem,2.6vw,2.4rem)] px-[clamp(0rem,1.8vw,1.6rem)] py-[clamp(0rem,0.1vw,0.1rem)]   justify-self-center  w-fit ">
 					<a
 						href=" "
 						target="_blank"
 						className="flex gap-x-[clamp(0rem,0.6vw,0.6rem)] h-fit items-center"
 					>
-						<span className="text-[clamp(0rem,3.2vw,2.4rem)] mt-[1px]">
-							Visit
-						</span>
-						<LuArrowUpRight className=" text-[clamp(0rem,3.6vw,2.2rem)] stroke-[2.7px]  -mr-[4px] sm:-mr-[3px]" />
+						<span className=" mt-[1px]">Visit</span>
+						<LuArrowUpRight className=" text-[clamp(0rem,2.8vw,2.2rem)] stroke-[2.7px]  -mr-[4px] sm:-mr-[3px]" />
 					</a>
 				</Button>
 			</div>

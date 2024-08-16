@@ -15,7 +15,7 @@ function ProjectDetail({ className, project }) {
 				e.animationName === "fadeOut" ? setIsAnimating(false) : "";
 			}}
 		>
-			<h2 className="text-[clamp(0rem,6.4vw,7rem)] mx-auto w-fit mt-[clamp(0rem,1.5vw,1.2rem)] font-bold tracking-wider mb-[clamp(1.2rem,2vw,2.2rem)]  ">
+			<h2 className="text-[clamp(0rem,6.4vw,7rem)] mx-auto w-fit mt-[clamp(0rem,1.5vw,1.2rem)] font-bold tracking-wider mb-[clamp(1.6rem,2vw,2.6rem)]  ">
 				{project.name}
 			</h2>
 
