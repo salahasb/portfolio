@@ -15,11 +15,11 @@ function ProjectDetail({ className, project }) {
 				e.animationName === "fadeOut" ? setIsAnimating(false) : "";
 			}}
 		>
-			<h2 className="text-clamp-project-detail-name mx-auto w-fit mt-[clamp(0rem,1.5vw,1.2rem)] font-bold tracking-wider mb-[clamp(0rem,2vw,2.2rem)]  ">
+			<h2 className="text-[clamp(0rem,6.4vw,7rem)] mx-auto w-fit mt-[clamp(0rem,1.5vw,1.2rem)] font-bold tracking-wider mb-[clamp(1.2rem,2vw,2.2rem)]  ">
 				{project.name}
 			</h2>
 
-			<div className="overflow-hidden rounded-[15px] sm:rounded-[20px] md:rounded-[30px] lg:rounded-[40px] aspect-video     ">
+			<div className="overflow-hidden rounded-[15px] sm:rounded-[20px]   md:rounded-[30px] lg:rounded-[40px] aspect-video     ">
 				{/* <img
 					src={`${project.src}.webp`}
 					alt={`${project.name} app screenshot`}
@@ -32,9 +32,9 @@ function ProjectDetail({ className, project }) {
 
 			<ProjectInfo project={project} />
 
-			<div className="w-full hidden lg:block h-[0.3rem] rounded-md bg-[#eee] mb-[8rem]"></div>
+			<div className="w-full hidden lg:block h-[0.3rem] rounded-md bg-[#eee] mb-[5rem]"></div>
 
-			<div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-36 pb-36">
+			<div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-28 pb-36">
 				<ProjectOverview />
 				<ProjectFeatures />
 			</div>

@@ -3,7 +3,7 @@ import Title from "./Title";
 function ProjectOverview() {
 	return (
 		<div className="flex justify-between">
-			<div className="text-[clamp(0rem,4.5vw,2rem)] leading-relaxed max-w-[60rem] text-[#ddd]">
+			<div className="text-[clamp(0rem,4.5vw,2rem)] leading-relaxed max-w-[50rem] text-[#ddd]">
 				<Title title="Overview" />
 
 				<p className="mb-5">
