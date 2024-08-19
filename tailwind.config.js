@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import defaultTheme from "tailwindcss/defaultTheme";
 import containerPlugin from "@tailwindcss/container-queries";
+import { BiBorderRadius } from "react-icons/bi";
 
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -122,6 +123,11 @@ export default {
 				ringSpread: {
 					"0%": { boxShadow: "0px 0px 0px 0px #EC1352" },
 					"100%": { boxShadow: "0px 0px 0px 2px #EC1352" },
+				},
+				imageFadeScale: {
+					"0%": { transform: "scale(0.1)", opacity: 0 },
+					"50%": { transform: "scale(0.1)", opacity: 0.8 },
+					"100%": { transform: "scale(1)", opacity: 1 },
 				},
 			},
 			backdropBlur: {

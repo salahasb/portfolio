@@ -2,7 +2,7 @@ import About from "../pages/about-me/About";
 import Hero from "../pages/hero-page/Hero";
 import Projects from "../pages/my-projects/Projects";
 
-// the order of items matters
+// the order of items routes in this array matters
 export const routes = [
 	{ path: "/", component: Hero },
 	{ path: "/projects", component: Projects },
@@ -15,10 +15,12 @@ export const myProjects = [
 		path: "/projects/forkify",
 		description: "recipe finder",
 		src: "/projects/forkify",
-		techStack: ["react", "react-router", "redux"],
+		techStack: ["react-router", "redux"],
 		role: "front-end",
-		overview:
-			"Forkify is a dynamic recipe search application designed for food enthusiasts. With access to over 1,000,000 recipes, users can easily find and manage their favorite recipes all in one place. This app is built with a focus on user experience, offering a seamless and interactive way to explore, customize, and save recipes.",
+		overview: [
+			"Forkify is a dynamic recipe search application designed for food enthusiasts. With access to over 1,000,000 recipes, users can easily find and manage their favorite recipes all in one place.",
+			"This app is built with a focus on user experience, offering a seamless and interactive way to explore, customize, and save recipes.",
+		],
 		features: [
 			{
 				title: "Extensive Recipe Search:",
@@ -53,7 +55,6 @@ export const myProjects = [
 		description: "hotel manager",
 		src: "/projects/the-wild-oasis",
 		techStack: [
-			"react",
 			"styled-components",
 			"react-router",
 			"supabase",
@@ -61,17 +62,85 @@ export const myProjects = [
 			"react-hook-form",
 		],
 		role: "full-stack",
-		overview: "",
-		features: [],
+		overview: [
+			"The Wild Oasis is an internal management app designed specifically for employees of a boutique hotel with 8 luxurious wooden cabins.",
+			"The app streamlines hotel operations, from employee management to cabin bookings, providing an all-in-one solution for the hotel's administrative needs.",
+		],
+		features: [
+			{
+				title: "Employee Management:",
+				description:
+					" Secure sign-up and sign-in, profile updates, and user registration.",
+			},
+			{
+				title: "Cabin Inventory:",
+				description:
+					" Manage cabin details with CRUD operations, filtering, sorting, and photo uploads.",
+			},
+			{
+				title: "Booking Management:",
+				description:
+					" View and manage bookings with detailed guest information, status updates, and sorting/filtering options.",
+			},
+			{
+				title: "Dashboard & Analytics:",
+				description:
+					" Overview of daily operations, booking statistics, and sales performance.",
+			},
+			{
+				title: "Customizable Settings:",
+				description:
+					" Set application-wide settings like booking limits and pricing.",
+			},
+			{
+				title: "Dark Mode:",
+				description:
+					" Toggle between light and dark themes for better usability.",
+			},
+		],
 	},
 	{
 		name: "WorldWise",
 		path: "/projects/worldwise",
 		description: "travel tracker",
 		src: "/projects/worldwise",
-		techStack: ["react", "leaflet", "react-router"],
+		techStack: ["leaflet", "react-router"],
 		role: "front-end",
-		overview: "",
-		features: [],
+		overview: [
+			"WorldWise is an interactive map application that allows users to explore and document cities they've visited.",
+			" With a seamless integration of a dynamic map and a user-friendly interface, the app provides a simple way to mark locations, record details, and visualize travel experiences.",
+		],
+		features: [
+			{
+				title: "Interactive Map: ",
+				description:
+					"A form appears with the selected city name, allowing users to add a date and notes before saving the city to their list.",
+			},
+			{
+				title: "City Registration:",
+				description:
+					"Users can click on any city on the map (powered by Leaflet) to mark it and register it in the database.",
+			},
+			{
+				title: "Real-Time Updates:",
+				description:
+					"Upon submission, the registered city is immediately added to a list on the left side of the interface, displaying all registered cities.",
+			},
+			{
+				title: "City Details & Navigation:",
+				description:
+					"Clicking on a registered city from the list shows its details and moves the map directly to the city’s marker.",
+			},
+			{
+				title: "Country Overview:",
+				description:
+					"A dedicated button leads to a list of all countries associated with the registered cities, providing a broader view of the user’s travels.",
+			},
+			{
+				title: "Geolocation Feature:",
+				description:
+					"Users can allow the app to access their browser’s location, pinpointing their current position on the map.",
+			},
+		],
 	},
 ];

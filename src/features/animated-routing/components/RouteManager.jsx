@@ -1,7 +1,4 @@
 import { useAnimatedRouting } from "../contexts/AnimatedRoutingContext";
-import Hero from "../../../pages/hero-page/Hero";
-import Projects from "../../../pages/my-projects/Projects";
-import About from "../../../pages/about-me/About";
 import { myProjects, routes } from "../../../utils/constants";
 import ProjectDetail from "../../../pages/project-detail/ProjectDetail";
 

@@ -1,12 +1,20 @@
 import { PiDotBold } from "react-icons/pi";
 import Title from "./Title";
 
-function ProjectFeatures() {
+function ProjectFeatures({ project }) {
 	return (
 		<div className="basis-1/2 tracking-wider leading-relaxed text-[clamp(0rem,4vw,1.8rem)] text-[#ddd] max-w-[60rem]">
 			<Title title="Features" />
 
-			<p className=" mb-[2rem] ">
+			{project.features.map((feature, i) => (
+				<p className=" mb-[2rem] " key={i}>
+					<span className="  text-[#eee] font-bold shrink-0 ">
+						<span>{feature.title} </span>
+					</span>
+					<span>{feature.description}</span>
+				</p>
+			))}
+			{/* <p className=" mb-[2rem] ">
 				<span className="  text-[#eee] font-bold shrink-0 ">
 					<span>Extensive Recipe Search: </span>
 				</span>
@@ -54,7 +62,7 @@ function ProjectFeatures() {
 					A user-friendly form allows users to add their own recipes, complete
 					with all relevant details, to the backend (external API).
 				</span>
-			</p>
+			</p> */}
 		</div>
 	);
 }

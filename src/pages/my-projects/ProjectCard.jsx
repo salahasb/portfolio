@@ -41,7 +41,7 @@ function ProjectCard({ project, style }) {
 				<ul className="flex  ">
 					{project.techStack.map((tool) => (
 						<li
-							className=" center p-[2cqi] aspect-square -mr-2  bg-brand-900 rounded-full border-white/30  border"
+							className=" center p-[2cqi] aspect-square -mr-2 text-[0.2rem]  bg-brand-900 rounded-full border-white/30  border"
 							key={tool}
 						>
 							<img
