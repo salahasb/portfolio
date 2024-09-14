@@ -48,6 +48,7 @@ export const myProjects = [
 					"A user-friendly form allows users to add their own recipes, complete with all relevant details, to the backend (external API).",
 			},
 		],
+		link: "https://forkify-salahasb.vercel.app",
 	},
 	{
 		name: "The Wild Oasis",
@@ -98,6 +99,7 @@ export const myProjects = [
 					" Toggle between light and dark themes for better usability.",
 			},
 		],
+		link: "https://the-wild-oasis-salahasb.vercel.app",
 	},
 	{
 		name: "WorldWise",
@@ -142,5 +144,6 @@ export const myProjects = [
 					"Users can allow the app to access their browser’s location, pinpointing their current position on the map.",
 			},
 		],
+		link: "https://worldwise-salahasb.vercel.app",
 	},
 ];

@@ -44,7 +44,7 @@ function ProjectInfo({ project }) {
 				</span>
 				<Button className=" bg-brand-500 text-[clamp(0rem,2.6vw,2.4rem)] px-[clamp(0rem,1.8vw,1.6rem)] py-[clamp(0rem,0.1vw,0.1rem)]   justify-self-center  w-fit ">
 					<a
-						href=" "
+						href={project.link}
 						target="_blank"
 						className="flex gap-x-[clamp(0rem,0.6vw,0.6rem)] h-fit items-center"
 					>
