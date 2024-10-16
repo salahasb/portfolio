@@ -3,7 +3,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 
 function ProjectInfo({ project }) {
 	return (
-		<div className="px-5 mt-[clamp(2rem,10vw,4rem)] max-sm:mb-[clamp(2rem,7vw,3rem)] sm:mb-[2rem]   lg:my-[4rem]  grid grid-cols-[1.2fr_1fr_auto]   lg:grid-cols-[1.2fr_0.8fr_1fr_auto]  xl:grid-cols-[0.8fr_0.6fr_1fr_auto] gap-y-3 md:gap-y-8 gap-x-10 md:gap-x-20  ">
+		<div className="px-5    my-[1.2rem] md:my-[2.4rem]  xl:my-[3rem]  grid grid-cols-[1.2fr_1fr_auto]   lg:grid-cols-[1.2fr_0.8fr_1fr_auto]  xl:grid-cols-[0.8fr_0.6fr_1fr_auto] gap-y-3 md:gap-y-8 gap-x-10 md:gap-x-20   ">
 			<div className="flex flex-col   ">
 				<span className="uppercase      text-[#ccc] font-bold tracking-[0.2rem] mb-[clamp(0.1rem,0.5vw,0.75rem)] text-[clamp(0rem,2.2vw,1.6rem)] ">
 					Title
@@ -22,8 +22,8 @@ function ProjectInfo({ project }) {
 				</span>
 			</div>
 
-			<div className="flex flex-col      max-sm:col-start-1 max-sm:row-start-2 overflow-hidden">
-				<span className="uppercase    text-[#ccc] font-bold tracking-[0.2rem]    mb-[clamp(0.1rem,1vw,2.8rem)] text-[clamp(0rem,2.2vw,1.6rem)]">
+			<div className="  flex-col max-sm:col-start-1 max-sm:row-start-2 overflow-hidden hidden lg:flex">
+				<span className="uppercase text-[#ccc] font-bold tracking-[0.2rem] mb-[clamp(0.1rem,1vw,2.8rem)] text-[clamp(0rem,2.2vw,1.6rem)]">
 					tech-stack
 				</span>
 				<ul className="flex   gap-x-2 sm:gap-x-5 gap-y-4  lg:max-w-[75%] items-center justify-self-center overflow-x-auto  custom-scrollbar pb-2">

@@ -11,14 +11,14 @@ export const routes = [
 
 export const myProjects = [
 	{
-		name: "Forkify",
-		path: "/projects/forkify",
+		name: "Wajbaty",
+		path: "/projects/wajbaty",
 		description: "recipe finder",
-		src: "/projects/forkify",
-		techStack: ["react-router", "redux"],
+		src: "/projects/wajbaty",
+		techStack: ["React.js", "react-router", "redux"],
 		role: "front-end",
 		overview: [
-			"Forkify is a dynamic recipe search application designed for food enthusiasts. With access to over 1,000,000 recipes, users can easily find and manage their favorite recipes all in one place.",
+			"Wajbaty is a dynamic recipe search application designed for food enthusiasts. With access to over 1,000,000 recipes, users can easily find and manage their favorite recipes all in one place.",
 			"This app is built with a focus on user experience, offering a seamless and interactive way to explore, customize, and save recipes.",
 		],
 		features: [
@@ -48,14 +48,15 @@ export const myProjects = [
 					"A user-friendly form allows users to add their own recipes, complete with all relevant details, to the backend (external API).",
 			},
 		],
-		link: "https://forkify-salahasb.vercel.app",
+		link: "https://wajbaty.vercel.app",
 	},
 	{
-		name: "The Wild Oasis",
-		path: "/projects/the-wild-oasis",
+		name: "Woody Cab",
+		path: "/projects/woody-cab",
 		description: "hotel manager",
-		src: "/projects/the-wild-oasis",
+		src: "/projects/woody-cab",
 		techStack: [
+			"React.js",
 			"styled-components",
 			"react-router",
 			"supabase",
@@ -64,7 +65,7 @@ export const myProjects = [
 		],
 		role: "full-stack",
 		overview: [
-			"The Wild Oasis is an internal management app designed specifically for employees of a boutique hotel with 8 luxurious wooden cabins.",
+			"Woody Cab is an internal management app designed specifically for employees of a boutique hotel with 8 luxurious wooden cabins.",
 			"The app streamlines hotel operations, from employee management to cabin bookings, providing an all-in-one solution for the hotel's administrative needs.",
 		],
 		features: [
@@ -99,17 +100,17 @@ export const myProjects = [
 					" Toggle between light and dark themes for better usability.",
 			},
 		],
-		link: "https://the-wild-oasis-salahasb.vercel.app",
+		link: "https://woody-cab.vercel.app",
 	},
 	{
-		name: "WorldWise",
-		path: "/projects/worldwise",
+		name: "WorldTrav",
+		path: "/projects/worldtrav",
 		description: "travel tracker",
-		src: "/projects/worldwise",
-		techStack: ["leaflet", "react-router"],
+		src: "/projects/worldtrav",
+		techStack: ["React.js", "leaflet", "react-router"],
 		role: "front-end",
 		overview: [
-			"WorldWise is an interactive map application that allows users to explore and document cities they've visited.",
+			"WorldTrav is an interactive map application that allows users to explore and document cities they've visited.",
 			" With a seamless integration of a dynamic map and a user-friendly interface, the app provides a simple way to mark locations, record details, and visualize travel experiences.",
 		],
 		features: [
@@ -144,6 +145,6 @@ export const myProjects = [
 					"Users can allow the app to access their browser’s location, pinpointing their current position on the map.",
 			},
 		],
-		link: "https://worldwise-salahasb.vercel.app",
+		link: "https://worldtrav.vercel.app",
 	},
 ];

@@ -29,7 +29,7 @@ function ProjectDetail({ className, project }) {
 
 			<ProjectInfo project={project} />
 
-			<div className="w-full hidden lg:block h-[0.3rem] rounded-md bg-[#eee] mb-[5rem]"></div>
+			<div className="w-[98%] lg:w-full mx-auto  lg:block h-[0.1rem]   min-[600px]:h-[0.3rem] rounded-md bg-[#eee] mb-[3.2rem] lg:mb-[6rem]"></div>
 
 			<div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-28 pb-36">
 				<ProjectOverview project={project} />
