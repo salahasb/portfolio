@@ -9,8 +9,6 @@ function ProjectsSlider() {
 
 	// const [currentItem, setcurrentItem] = useState(0);
 
-	// const translate = `translate-x-[calc(${mobileCalc}%)]`;
-	// console.log(currentTranslate);
 	useEffect(() => {
 		const handleResize = () => {
 			const viewportWidth = window.innerWidth;
@@ -31,9 +29,10 @@ function ProjectsSlider() {
 	}, [currentItem, currentTranslate]);
 
 	if (!currentTranslate) return;
+
 	return (
 		// temp height and flex
-		<div className="overflow-hidden w-full h-[50rem] flex">
+		<div className="overflow-hidden w-full     py-[9%] 700:py-[7%] xl:py-[5%] flex max-w-[150rem]   ">
 			<ul
 				className={`flex  items-center justify-between gap-[21%]
                 700:gap-[18%] xl:gap-0 w-full transition-[transform] duration-[0.6s] ease-[cubic-bezier(.5,0,0,1)]  `}

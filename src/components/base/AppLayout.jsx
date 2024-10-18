@@ -38,7 +38,7 @@ function AppLayout() {
 				<AnimatedRoutingProvider>
 					<Header />
 
-					<main className="h-[calc(100%-8.9rem)] relative  ">
+					<main className="h-[calc(100%-8.9rem)] relative w-full  ">
 						{!isWaiting && <RouteManager />}
 					</main>
 

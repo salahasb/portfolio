@@ -8,7 +8,7 @@ function ProjectItem({ index, project, currentItem, setCurrentItem }) {
 	// console.log(isCurrentItem, index);
 	return (
 		<li
-			className=" w-[50%]  700:w-[40%]  xl:w-[26.4%] shrink-0 border border-1 aspect-video rounded-[10px] 700:rounded-[20px]    overflow-hidden transition-[transform] duration-[0.6s]   ease-[cubic-bezier(.5,0,0,1)]  cursor-pointer   "
+			className=" w-[50%]  700:w-[40%]  xl:w-[26.4%] shrink-0  aspect-video     transition-[transform] duration-[0.6s]   ease-[cubic-bezier(.5,0,0,1)]  cursor-pointer @container   "
 			style={
 				isCurrentItem
 					? {
@@ -21,8 +21,10 @@ function ProjectItem({ index, project, currentItem, setCurrentItem }) {
 			}
 			onClick={handleOnClick}
 		>
+			<div className="border border-1 overflow-hidden size-full rounded-[10cqw]">
+				{project.name}
+			</div>
 			{/* <img src="/projects/the-wild-oasis.png" alt="" /> */}
-			{project.name}
 		</li>
 	);
 }
