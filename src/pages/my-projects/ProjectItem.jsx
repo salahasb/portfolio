@@ -5,15 +5,17 @@ function ProjectItem({ index, project, currentItem, setCurrentItem }) {
 		setCurrentItem(index);
 	}
 
-	console.log(isCurrentItem, index);
+	// console.log(isCurrentItem, index);
 	return (
 		<li
-			className=" w-[50%]  lg:w-[33.33%] shrink-0 border border-1 aspect-video rounded-[12px] lg:rounded-[20px]   overflow-hidden transition-[transform] duration-[0.6s]   ease-[cubic-bezier(.5,0,0,1)]     "
+			className=" w-[50%]  700:w-[40%]  xl:w-[26.4%] shrink-0 border border-1 aspect-video rounded-[10px] 700:rounded-[20px]    overflow-hidden transition-[transform] duration-[0.6s]   ease-[cubic-bezier(.5,0,0,1)]  cursor-pointer   "
 			style={
 				isCurrentItem
 					? {
 							transform: "scale(1.6)",
-							transition: "transform 0.6s    cubic-bezier(.5,0,0.50,1) ",
+
+							// for another effect set "50" to the 4th argument of "cubic" css function
+							transition: "transform 0.6s    cubic-bezier(.5,0,0.0,1) ",
 					  }
 					: {}
 			}

@@ -13,7 +13,7 @@ function Projects({ className }) {
 	return (
 		<section
 			onAnimationEnd={handleOnAnimationEnd}
-			className="w-full  max-w-[150rem] mx-auto border-1  "
+			className="w-full  max-w-[150rem] mx-auto border-1   "
 		>
 			<SubHeading className=" mx-auto ">My Projects</SubHeading>
 
