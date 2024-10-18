@@ -54,7 +54,8 @@ function ProjectCard({ project, style }) {
 				</ul>
 
 				<Link
-					to={`projects/${project.name.toLowerCase().replace(/ /g, "-")}`}
+					// to={`projects/${project.name.toLowerCase().replace(/ /g, "-")}`}
+					to={`${project.path}`}
 					className=" flex gap-1   px-6   py-[0.1rem]   md:px-5   md:py-[0.1rem] lg:px-6  rounded-lg bg-brand-600 items-center text-clamp-project-button font-semibold tracking-wide text-gray-200 transition-transform duration-300 hover:scale-110  "
 				>
 					View

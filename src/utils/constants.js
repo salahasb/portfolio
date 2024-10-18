@@ -52,9 +52,9 @@ export const myProjects = [
 	},
 	{
 		name: "Woody Cab",
-		path: "/projects/woody-cab",
+		path: "/projects/woodycab",
 		description: "hotel manager",
-		src: "/projects/woody-cab",
+		src: "/projects/woodycab",
 		techStack: [
 			"React.js",
 			"styled-components",
@@ -100,7 +100,7 @@ export const myProjects = [
 					" Toggle between light and dark themes for better usability.",
 			},
 		],
-		link: "https://woody-cab.vercel.app",
+		link: "https://woodycab.vercel.app",
 	},
 	{
 		name: "WorldTrav",

@@ -68,7 +68,7 @@ function AnimatedRoutingProvider({ children }) {
 		return () => {
 			window.removeEventListener("wheel", callback);
 		};
-	}, [isAnimating, curRouteIndex, navigate]);
+	}, [isAnimating, curRouteIndex, navigate, pathname]);
 
 	return (
 		<AnimatedRoutingContext.Provider
