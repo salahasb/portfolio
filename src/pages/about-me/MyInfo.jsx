@@ -2,7 +2,7 @@ function MyInfo() {
 	return (
 		<div className=" 500:grow">
 			<h3 className="text-[2.8rem] w-fit  font-semibold text-[#fff]/90 mb-16 md:mb-[4.5rem]  md:text-[3.5rem] animate-fadeIn-translateUp about-me-titles-accent ">
-				My info
+				About Me
 			</h3>
 
 			<div className="flex items-center mb-10 gap-8 opacity-0 animate-[fadeIn-translateUp_1s_0.2s_forwards]  ">
@@ -19,7 +19,7 @@ function MyInfo() {
 				</p>
 			</div>
 
-			<div className="text-[1.5rem] [&>*]:mb-6 min-w-[28rem]  max-w-[36rem]  lg:text-[1.6rem] text-[#ddd] leading-relaxed ">
+			<div className="text-[1.5rem] [&>*]:mb-6 min-w-[28rem]  max-w-[36rem] xl:max-w-[40rem] lg:text-[1.6rem] text-[#ddd] leading-relaxed ">
 				<p className="opacity-0 animate-[fadeIn-translateUp_0.8s_0.5s_forwards]">
 					Hello! I&apos;m Salah Aassab, a front-end web developer specializing
 					in React.js.

@@ -32,7 +32,7 @@ function ProjectsSlider() {
 
 	return (
 		// temp height and flex
-		<div className="overflow-hidden w-full     py-[9%] 700:py-[7%] xl:py-[5%] flex max-w-[150rem]   ">
+		<div className="overflow-hidden w-full      py-[9%] 700:py-[7%] xl:py-[5%] flex max-w-[150rem]   ">
 			<ul
 				className={`flex  items-center justify-between gap-[21%]
                 700:gap-[18%] xl:gap-0 w-full transition-[transform] duration-[0.6s] ease-[cubic-bezier(.5,0,0,1)]  `}

@@ -13,9 +13,11 @@ function Projects({ className }) {
 	return (
 		<section
 			onAnimationEnd={handleOnAnimationEnd}
-			className={`w-full absolute animate-[fadeIn_1s_forwards]   mx-auto border-1 h-[calc(100%-10.2rem)] center flex-col  ${className}  `}
+			className={`w-full absolute animate-[fadeIn_1s_forwards]   mx-auto border-1 h-[calc(100%-20rem)] 600:h-[calc(100%-10.2rem)]  min-h-[43.3rem] center flex-col  ${className}  `}
 		>
-			<SubHeading className=" mx-auto mb-[4rem] ">My Projects</SubHeading>
+			<SubHeading className=" mx-auto mb-[2.8rem] 425:mb-[3.8rem]  ">
+				My Projects
+			</SubHeading>
 
 			<ProjectsSlider />
 		</section>
