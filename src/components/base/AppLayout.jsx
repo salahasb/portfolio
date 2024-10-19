@@ -31,7 +31,7 @@ function AppLayout() {
 	}, []);
 
 	return (
-		<div className="h-dvh px-10 500:px-14 md:px-20 xl:px-36 max-w-[190rem] mx-auto relative">
+		<div className="h-dvh px-10 500:px-14 md:px-20 xl:px-36 max-w-[190rem] mx-auto relative bg-[radial-gradient(circle_at_50%_-40%,#ec135123_20%,transparent_60%),radial-gradient(#2b040f_30%,transparent_70%)]">
 			<Loader isPageLoaded={isPageLoaded} />
 
 			{isPageLoaded && (

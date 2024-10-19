@@ -22,7 +22,7 @@ function ProjectItem({ index, project, currentItem, setCurrentItem }) {
 			}
 			onClick={handleOnClick}
 		>
-			<div className="  border-1 overflow-hidden size-full rounded-[8cqw]">
+			<div className="  border-1 overflow-hidden size-full rounded-[6cqw]">
 				{/* {project.name} */}
 				{/* <img src={`${project.src}-big.webp`} alt="" /> */}
 				<img src={`/projects/wajbaty-big.webp`} alt="" />

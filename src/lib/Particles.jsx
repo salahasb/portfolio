@@ -29,7 +29,7 @@ const Particle = memo(function Particle({ isPageLoaded }) {
 		() => ({
 			background: {
 				color: {
-					value: "#25030d",
+					value: "transparent",
 				},
 			},
 			fpsLimit: 50,
@@ -83,7 +83,7 @@ const Particle = memo(function Particle({ isPageLoaded }) {
 						width: 900,
 						height: 900,
 					},
-					value: 150,
+					value: 100,
 				},
 				opacity: {
 					// value: 0.9,

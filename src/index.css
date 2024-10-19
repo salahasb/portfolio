@@ -9,17 +9,33 @@
 
 	body {
 		height: 100dvh;
-		background-color: #25030d;
-
-		/* background-image: linear-gradient(
-			145deg,
-			#25030d 0%,
-			#25030d 20%,
-			#470619 50%,
-			#25030d 80%,
-			#25030d 100%
-		); */
-
+		background-color: #2b040f;
+		/* linear-gradient(
+				140deg,
+				#2b0410 0%,
+				#2b0410 10%,
+				#2b0410 30%,
+				#2b0410 80%,
+				#390515 90%,
+				#25030d 100%
+			), */
+		/* background-image: radial-gradient(
+				circle at 50% -20%,
+				#ec13511e 20%,
+				transparent 60%
+			) */
+		/* ,
+			radial-gradient(circle at 100% 100%, #ec135116 20%, transparent 60%); */
+		/* linear-gradient(
+				140deg,
+				#2b0410 0%,
+				#2b0410 10%,
+				#3d0516 20%,
+				#2b0410 30%,
+				#2b0410 80%,
+				#390515 90%,
+				#25030d 100%
+			); */
 		@apply text-white;
 	}
 	::-webkit-scrollbar {
