@@ -18,23 +18,10 @@ function ProjectCard({ project, style }) {
 				<img
 					onLoad={() => setImageHasLoaded(true)}
 					src={`${project.src}.webp`}
-					className={`opacity-0 transition-opacity duration-500 ${
-						imageHasLoaded ? "opacity-100" : ""
-					} `}
+					className={`opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.5,0,0.40,1)]
+						 ${imageHasLoaded ? "opacity-100" : ""} `}
 					alt={`${project.name} app desktop screenshot`}
 				/>
-			</div>
-
-			<div className="@container">
-				<h3
-					className={`mb-12 sm:mb-10 lg:mb-14  leading-9  425:leading-tight   text-clamp-project-name 1474:mb-20   `}
-				>
-					<span className="font-semibold  ">{project.name}</span>
-					<span> - </span>
-					<span className="text-clamp-project-description ">
-						{project.description}
-					</span>
-				</h3>
 			</div>
 
 			<div className="flex justify-between items-center mt-auto @container">

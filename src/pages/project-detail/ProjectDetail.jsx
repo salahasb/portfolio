@@ -22,7 +22,7 @@ function ProjectDetail({ className, project }) {
 					alt={`${project.name} app screenshot`}
 				/> */}
 				<img
-					src={`/projects/the-wild-oasis.png`}
+					src={`${project.name.toLowerCase().replace(" ", "")}-big.webp`}
 					alt={`${project.name} app screenshot`}
 				/>
 			</div>
