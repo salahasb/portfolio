@@ -9,7 +9,7 @@ function ProjectItem({ index, project, currentItem, setCurrentItem }) {
 	return (
 		// for another effect set "50" to the 4th argument of "cubic" css function
 		<li
-			className=" w-[50%]  700:w-[40%]  xl:w-[26.4%] shrink-0  aspect-video transition-[transform_opacity] duration-[0.6s]    cursor-pointer @container ease-[cubic-bezier(.5,0,0.40,1)] opacity-[.5]  "
+			className=" w-[50%]  700:w-[40%]  xl:w-[26.4%] shrink-0  aspect-video transition-[transform_opacity] duration-[0.6s]    cursor-pointer @container ease-[cubic-bezier(.5,0,0.40,1)] opacity-[.4]  "
 			style={
 				isCurrentItem
 					? {
@@ -22,10 +22,10 @@ function ProjectItem({ index, project, currentItem, setCurrentItem }) {
 			}
 			onClick={handleOnClick}
 		>
-			<div className="  border-1 overflow-hidden size-full rounded-[6cqw]">
+			<div className="  border-1 overflow-hidden size-full rounded-[8cqw]">
 				{/* {project.name} */}
-				{/* <img src={`${project.src}-big.webp`} alt="" /> */}
-				<img src={`/projects/wajbaty-big.webp`} alt="" />
+				<img src={`${project.src}-big.webp`} alt="" />
+				{/* <img src={`/projects/wajbaty-big.webp`} alt="" /> */}
 			</div>
 		</li>
 	);
