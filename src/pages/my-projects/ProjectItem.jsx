@@ -22,9 +22,17 @@ function ProjectItem({ index, project, currentItem, setCurrentItem }) {
 			}
 			onClick={handleOnClick}
 		>
-			<div className="  border-1 overflow-hidden size-full rounded-[8cqw]">
+			<div className="relative  border-1 overflow-hidden size-full rounded-[7cqw] ">
 				{/* {project.name} */}
 				<img src={`${project.src}-big.webp`} alt="" />
+				{/* overlay */}
+				<div
+					className={`h-[100.5%]  absolute w-[100.5%] left-1/2 top-1/2 -translate-x-1/2  -translate-y-1/2 z-10 
+						 bg-[linear-gradient(360deg,_rgba(0,0,0,1)_0%,_rgba(51,4,39,0)_100%)] 
+						  opacity-0   transition-opacity  duration-[0.6s]   ${
+								isCurrentItem ? "  opacity-70" : ""
+							} `}
+				></div>
 				{/* <img src={`/projects/wajbaty-big.webp`} alt="" /> */}
 			</div>
 		</li>
