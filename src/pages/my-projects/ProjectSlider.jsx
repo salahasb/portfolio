@@ -4,10 +4,19 @@ import ProjectItem from "./ProjectItem";
 
 function ProjectsSlider() {
 	const [currentItem, setCurrentItem] = useState(1);
-
 	const [currentTranslate, setCurrentTranslate] = useState();
 
-	// const [currentItem, setcurrentItem] = useState(0);
+	// const [touchStartX, setTouchStartX] = useState(0);
+	let touchStartX = 0;
+
+	function handleTouchEnd(e) {
+		const touchEndX = e.changedTouches[0].clientX;
+
+		if (touchStartX > touchEndX)
+			setCurrentItem((c) => (c < myProjects.length - 1 ? c + 1 : c));
+
+		if (touchStartX < touchEndX) setCurrentItem((c) => (c > 0 ? c - 1 : c));
+	}
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -32,7 +41,14 @@ function ProjectsSlider() {
 
 	return (
 		// temp height and flex
-		<div className="overflow-hidden w-full py-[9%] 700:py-[7%] xl:py-[5%] flex max-w-[150rem]   ">
+		<div
+			className="overflow-hidden w-full py-[9%] 700:py-[7%] xl:py-[5%] flex max-w-[150rem] select-none   "
+			// onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
+			onTouchStart={(e) => {
+				touchStartX = e.touches[0].clientX;
+			}}
+			onTouchEnd={(e) => handleTouchEnd(e)}
+		>
 			<ul
 				className={`flex  items-center justify-between gap-[21%]
                 700:gap-[18%] xl:gap-0 w-full transition-[transform] duration-[0.6s] ease-[cubic-bezier(.5,0,0,1)]  `}

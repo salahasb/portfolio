@@ -14,7 +14,7 @@ function useAnimatedNavigate() {
 		navigate(path);
 	}
 
-	return handleNavigate;
+	return { handleNavigate };
 }
 
 export default useAnimatedNavigate;

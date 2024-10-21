@@ -31,7 +31,7 @@ function AppLayout() {
 	}, []);
 
 	return (
-		<div className="h-dvh px-10 500:px-14 md:px-20 xl:px-36 max-w-[190rem] mx-auto relative bg-[radial-gradient(circle_at_50%_-50%,#ec135149_0%,transparent_60%),radial-gradient(#24020c_50%,transparent_80%)]">
+		<div className="h-dvh  max-w-[190rem] mx-auto relative bg-[radial-gradient(circle_at_50%_-50%,#ec135149_0%,transparent_60%),radial-gradient(#24020c_50%,transparent_80%)]">
 			<Loader isPageLoaded={isPageLoaded} />
 
 			{isPageLoaded && (

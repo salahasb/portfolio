@@ -4,14 +4,14 @@ import useAnimatedNavigate from "../../features/animated-routing/hooks/useAnimat
 
 function Hero({ className }) {
 	const { setIsAnimating } = useAnimatedRouting();
-	const handleNavigate = useAnimatedNavigate();
+	const { handleNavigate } = useAnimatedNavigate();
 
 	return (
 		<section
 			onAnimationEnd={(e) => {
 				e.animationName === "fadeOut" ? setIsAnimating(false) : "";
 			}}
-			className={`h-[calc(100%-8.9rem)] flex flex-col items-center justify-center absolute -z-0    text-gray-200  ${className}`}
+			className={`px-10 500:px-14 md:px-20 xl:px-36 h-[calc(100%-8.9rem)] flex flex-col items-center justify-center absolute -z-0    text-gray-200  ${className}`}
 		>
 			<h1
 				className={` animate-[fadeIn-translateUp_1s_0.2s_forwards] translate-y-[10rem] opacity-0 text-center text-clamp-heading-sm 500:text-clamp-heading-md md:text-clamp-heading-lg xl:text-clamp-heading-xl 2xl:text-clamp-heading-2xl font-bold md:font-semibold relative leading-[1.4] 500:leading-[1.3] lg:leading-[1.2] xl:tracking-tight mb-5  lg:mb-8 xl:mb-10 `}

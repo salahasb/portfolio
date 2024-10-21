@@ -11,7 +11,7 @@ function About({ className }) {
 			onAnimationEnd={(e) => {
 				setIsAnimating(false);
 			}}
-			className={`w-full flex flex-col items-center  md:h-[90%] md:justify-center max-md:pb-44 ${className}`}
+			className={`  md:px-20 xl:px-36 w-full flex flex-col items-center  md:h-[90%] md:justify-center max-md:pb-44 ${className}`}
 		>
 			<SubHeading className="2xl:mb-[5.4rem]">About me</SubHeading>
 

@@ -7,7 +7,7 @@ function ProjectDetail({ className, project }) {
 	const { setIsAnimating } = useAnimatedRouting();
 	return (
 		<section
-			className={`absolute   w-full  inset-0  max-w-[120rem] mx-auto  animate-[fadeIn_1.5s_forwards] ${className}`}
+			className={`px-10 500:px-14 md:px-20 xl:px-36 absolute   w-full  inset-0  max-w-[120rem] mx-auto  animate-[fadeIn_1.5s_forwards] ${className}`}
 			onAnimationEnd={(e) => {
 				e.animationName === "fadeOut" ? setIsAnimating(false) : "";
 			}}

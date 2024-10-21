@@ -1,7 +1,7 @@
 import useAnimatedNavigate from "../../features/animated-routing/hooks/useAnimatedNavigate";
 
 function Navbar() {
-	const handleNavigate = useAnimatedNavigate();
+	const { handleNavigate } = useAnimatedNavigate();
 
 	return (
 		<nav className={`hidden 900:block `}>

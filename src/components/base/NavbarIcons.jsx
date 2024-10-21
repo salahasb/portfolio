@@ -4,7 +4,7 @@ import useAnimatedNavigate from "../../features/animated-routing/hooks/useAnimat
 
 function NavbarIcons() {
 	const { pathname } = useLocation();
-	const handleNavigate = useAnimatedNavigate();
+	const { handleNavigate } = useAnimatedNavigate();
 
 	return (
 		<nav>
