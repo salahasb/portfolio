@@ -3,7 +3,7 @@ import { myProjects } from "../../utils/constants";
 import ProjectItem from "./ProjectItem";
 
 function ProjectsSlider() {
-	const [currentItem, setCurrentItem] = useState(0);
+	const [currentItem, setCurrentItem] = useState(1);
 
 	const [currentTranslate, setCurrentTranslate] = useState();
 

@@ -40,6 +40,7 @@
 	}
 	::-webkit-scrollbar {
 		width: 1rem;
+		display: none;
 	}
 
 	::-webkit-scrollbar-track {
@@ -69,8 +70,14 @@
 	}
 
 	.custom-scrollbar::-webkit-scrollbar {
+		/* display: none; */
 		height: 5px;
+		display: block;
 	}
+	.hide-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
 	/* .custom-scrollbar::-webkit-scrollbar-track {
 		background: #ec1352;
 		border-radius: 10px;
