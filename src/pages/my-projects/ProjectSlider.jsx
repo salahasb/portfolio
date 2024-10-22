@@ -42,7 +42,7 @@ function ProjectsSlider() {
 	return (
 		// temp height and flex
 		<div
-			className="overflow-hidden w-full py-[9%] 700:py-[7%] xl:py-[5%] flex max-w-[150rem] select-none   "
+			className="overflow-hidden w-full py-[9%] 700:py-[7%] xl:py-[7rem] flex max-w-[150rem] select-none   "
 			// onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
 			onTouchStart={(e) => {
 				touchStartX = e.touches[0].clientX;

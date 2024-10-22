@@ -15,6 +15,7 @@ export default {
 				900: "900px",
 				1220: "1220px",
 				1474: "1474px",
+				1500: "1500px",
 			},
 			container: {
 				center: true,

@@ -13,9 +13,9 @@ function Projects({ className }) {
 	return (
 		<section
 			onAnimationEnd={handleOnAnimationEnd}
-			className={`w-full absolute animate-[fadeIn_1s_forwards]   mx-auto border-1 h-[calc(100%-20rem)] 600:h-[calc(100%-10.2rem)]  min-h-[43.3rem] center flex-col  ${className}  `}
+			className={` 500:px-14 md:px-20 xl:px-36  w-full absolute animate-[fadeIn_1s_forwards]   mx-auto border-1 h-[calc(100%-20rem)] 600:h-[calc(100%-10.2rem)]  min-h-[43.3rem]  center flex-col  ${className}  `}
 		>
-			<SubHeading className=" mx-auto mb-[2.8rem] 425:mb-[3.8rem]  ">
+			<SubHeading className=" mx-auto mb-[2.8rem] 425:mb-[3.8rem]  xl:mb-[3.6rem]  ">
 				My Projects
 			</SubHeading>
 

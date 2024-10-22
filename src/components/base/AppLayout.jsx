@@ -31,7 +31,7 @@ function AppLayout() {
 	}, []);
 
 	return (
-		<div className="h-dvh  max-w-[190rem] mx-auto relative bg-[radial-gradient(50%_35%_at_50%_-20%,#ec13512a_-20%,transparent),radial-gradient(#1c0209_40%,transparent_80%)] md:bg-[radial-gradient(50%_50%_at_50%_-5%,#ec13512a_-50%,transparent),radial-gradient(#1c0209_40%,transparent_80%)]  bg-no-repeat bg-center">
+		<div className="h-dvh  max-w-[190rem] mx-auto relative bg-[radial-gradient(70%_30rem_at_50%_-14rem,#ec13512a_-0%,transparent),radial-gradient(#1c0209_40%,transparent_80%)] md:bg-[radial-gradient(50%_60rem_at_50%_-24rem,#ec13512a_-0%,transparent),radial-gradient(#1c0209_40%,transparent_80%)]  bg-no-repeat bg-center">
 			<Loader isPageLoaded={isPageLoaded} />
 
 			{isPageLoaded && (
