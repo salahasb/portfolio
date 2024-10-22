@@ -37,21 +37,30 @@ function ProjectsSlider() {
 		return () => window.removeEventListener("resize", handleResize);
 	}, [currentItem, currentTranslate]);
 
+	// Event handlers
+	const handleOnTouchStart = (e) => {
+		touchStartX = e.touches[0].clientX;
+	};
+
+	// Styles
+	const sliderClasses = `flex  items-center justify-between gap-[21%]
+                700:gap-[18%] xl:gap-0 w-full transition-[transform] duration-[0.6s] ease-[cubic-bezier(.5,0,0,1)]  `;
+
+	const sliderContainerClasses =
+		"overflow-hidden w-full py-[9%] 700:py-[7%] xl:py-[7rem] flex max-w-[150rem] select-none   ";
+
 	if (!currentTranslate) return;
 
 	return (
 		// temp height and flex
 		<div
-			className="overflow-hidden w-full py-[9%] 700:py-[7%] xl:py-[7rem] flex max-w-[150rem] select-none   "
+			className={sliderContainerClasses}
 			// onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
-			onTouchStart={(e) => {
-				touchStartX = e.touches[0].clientX;
-			}}
+			onTouchStart={handleOnTouchStart}
 			onTouchEnd={(e) => handleTouchEnd(e)}
 		>
 			<ul
-				className={`flex  items-center justify-between gap-[21%]
-                700:gap-[18%] xl:gap-0 w-full transition-[transform] duration-[0.6s] ease-[cubic-bezier(.5,0,0,1)]  `}
+				className={sliderClasses}
 				style={{
 					transform: `translateX(calc(${currentTranslate}%))`,
 				}}

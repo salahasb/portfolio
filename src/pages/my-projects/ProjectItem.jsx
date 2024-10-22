@@ -84,12 +84,21 @@ function ProjectItem({ index, project, currentItem, setCurrentItem }) {
 
 	const isCurrentItem = currentItem === index;
 
+	// Event handlers
+	const handleOnClick = () => {
+		if (isCurrentItem) navigate(project.path);
+		else setCurrentItem(index);
+	};
+
 	// Styles
 	const currentItemStyle = isCurrentItem
 		? { transform: "scale(1.6)", opacity: 1 }
 		: isCurrentItem && imageLoaded
 		? { opacity: 1 }
 		: {};
+
+	const slideItemClasses =
+		"w-[50%] 700:w-[40%] xl:w-[26.4%] shrink-0 aspect-video transition-[transform_opacity] duration-[0.6s] cursor-pointer @container ease-[cubic-bezier(.5,0,0.0,1)] opacity-[.4]";
 
 	const overlayClasses = `h-[102%] absolute w-[102%] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 
     bg-[linear-gradient(360deg,_rgba(0,0,0,1)_0%,_rgba(51,4,39,0)_100%)] 
@@ -103,16 +112,9 @@ function ProjectItem({ index, project, currentItem, setCurrentItem }) {
 			: "translate-y-[40%] opacity-0 delay-0 duration-[0.3s]"
 	}`;
 
-	// Event handlers
-	const handleOnClick = () => {
-		if (isCurrentItem) navigate(project.path);
-		else setCurrentItem(index);
-	};
-
 	return (
 		<li
-			className="w-[50%] 700:w-[40%] xl:w-[26.4%] shrink-0 aspect-video transition-[transform_opacity] 
-        duration-[0.6s] cursor-pointer @container ease-[cubic-bezier(.5,0,0.0,1)] opacity-[.4]"
+			className={slideItemClasses}
 			style={currentItemStyle}
 			onClick={handleOnClick}
 		>

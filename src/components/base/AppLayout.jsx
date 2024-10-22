@@ -12,6 +12,10 @@ function AppLayout() {
 	const [isPageLoaded, setIsPageLoaded] = useState(false);
 	const [isWaiting, setIsWaiting] = useState(true);
 
+	// Styles
+	const appLayoutClasses =
+		"h-dvh  max-w-[190rem] mx-auto relative bg-[radial-gradient(70%_30rem_at_50%_-14rem,#ec13512a_-0%,transparent),radial-gradient(#1c0209_40%,transparent_80%)] md:bg-[radial-gradient(50%_60rem_at_50%_-24rem,#ec13512a_-0%,transparent),radial-gradient(#1c0209_40%,transparent_80%)]  bg-no-repeat bg-center";
+
 	// effect for rendering the page after the page has loaded + setting a delay for waiting the animation to finish in order to render the main content
 	useEffect(() => {
 		const handlePageLoad = () => {
@@ -31,7 +35,7 @@ function AppLayout() {
 	}, []);
 
 	return (
-		<div className="h-dvh  max-w-[190rem] mx-auto relative bg-[radial-gradient(70%_30rem_at_50%_-14rem,#ec13512a_-0%,transparent),radial-gradient(#1c0209_40%,transparent_80%)] md:bg-[radial-gradient(50%_60rem_at_50%_-24rem,#ec13512a_-0%,transparent),radial-gradient(#1c0209_40%,transparent_80%)]  bg-no-repeat bg-center">
+		<div className={appLayoutClasses}>
 			<Loader isPageLoaded={isPageLoaded} />
 
 			{isPageLoaded && (

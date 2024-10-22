@@ -4,6 +4,7 @@ import ProjectOverview from "./ProjectOverview";
 import ProjectFeatures from "./ProjectFeatures";
 import ProjectDetailPicture from "./ProjectDetailPicture";
 import ProjectDetailTitle from "./ProjectDetailTitle";
+import { handleOnAnimationEnd } from "../../utils/helpers";
 
 function ProjectDetail({ className, project }) {
 	const { setIsAnimating } = useAnimatedRouting();
@@ -13,9 +14,7 @@ function ProjectDetail({ className, project }) {
 	return (
 		<section
 			className={`px-10 500:px-14 md:px-20 xl:px-36 absolute   w-full  inset-0  max-w-[120rem] mx-auto  animate-[fadeIn_1.5s_forwards] ${className}`}
-			onAnimationEnd={(e) => {
-				e.animationName === "fadeOut" ? setIsAnimating(false) : "";
-			}}
+			onAnimationEnd={(e) => handleOnAnimationEnd(e, setIsAnimating)}
 		>
 			<ProjectDetailTitle title={project.name} />
 
