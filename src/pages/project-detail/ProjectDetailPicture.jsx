@@ -14,7 +14,7 @@ function ProjectPicture({ project }) {
 				srcSet={`
                     ${project.src}-small.webp 510w,
                     ${project.src}-medium.webp 760w,
-                    ${project.src}-big.webp 1200w
+                    ${project.src}-big.webp 1020w
                 `}
 				alt={`${project.name} app screenshot`}
 				loading="lazy"
