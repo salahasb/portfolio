@@ -3,7 +3,7 @@ import Title from "./Title";
 function ProjectOverview({ project }) {
 	return (
 		<div className="flex justify-between">
-			<div className="text-[clamp(0rem,4.5vw,2rem)] leading-relaxed max-w-[50rem] text-[#ddd]">
+			<div className="text-[clamp(1.2rem,3vw,1.8rem)] leading-relaxed max-w-[50rem] text-[#ddd]">
 				<Title title="Overview" />
 
 				{project.overview.map((p, i) => (

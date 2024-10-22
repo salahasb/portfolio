@@ -3,7 +3,7 @@ import Title from "./Title";
 
 function ProjectFeatures({ project }) {
 	return (
-		<div className="basis-1/2 tracking-wider leading-relaxed text-[clamp(0rem,4vw,1.8rem)] text-[#ddd] max-w-[60rem]">
+		<div className="basis-1/2 tracking-wider leading-relaxed text-[clamp(1.2rem,3vw,1.8rem)] text-[#ddd] max-w-[60rem]">
 			<Title title="Features" />
 
 			{project.features.map((feature, i) => (

@@ -1,24 +1,20 @@
-import { useState } from "react";
-
 function ProjectPicture({ project, imageLoaded, setImageLoaded }) {
 	return (
 		<div
 			className={` size-full ${
-				!imageLoaded ? "bg-[#25000a] animate-pulse" : ""
+				!imageLoaded ? "bg-[#2d000c] animate-pulse" : ""
 			}  `}
 		>
 			<img
 				loading="lazy"
 				onLoad={() => setImageLoaded(true)}
-				// className="opacity-95"
 				src={`${project.src}-big.webp`}
 				alt={`${project.name} app screenshot`}
 				srcSet={`
                 ${project.src}-small.webp 510w,
                 ${project.src}-medium.webp 760w,
-                ${project.src}-big.webp 1200w
-
             `}
+				// sizes="(max-width: 699px) 510vw, (max-width: 1279px) 760vw, 1200vw"
 			/>
 		</div>
 	);
