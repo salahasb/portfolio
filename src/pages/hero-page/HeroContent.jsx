@@ -8,6 +8,8 @@ function HeroContent() {
 	return (
 		<>
 			<h1 className={mainHeadingClasses}>
+				{/* for another effect*/}
+				{/* background: linear-gradient(271deg, #21000c, #e90154, #21000c); */}
 				<span className=" main-heading-accent">Passionate</span>
 
 				<span> Front-end Web Developer</span>

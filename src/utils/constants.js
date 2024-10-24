@@ -147,4 +147,38 @@ export const myProjects = [
 		],
 		link: "https://worldtrav.vercel.app",
 	},
+	{
+		name: "Unifood",
+		path: "/projects/unifood",
+		description: "landing page",
+		src: "/projects/unifood",
+		techStack: ["HTML", "CSS", "Javascript"],
+		role: "front-end",
+		overview: [
+			"The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!",
+		],
+		features: [
+			{
+				title: "Never cook again!: ",
+				description:
+					"Our subscriptions cover 365 days per year, even including major holidays.",
+			},
+			{
+				title: "Local and organic:",
+				description:
+					"Our cooks only use local, fresh, and organic products to prepare your meals.",
+			},
+			{
+				title: "No waste:",
+				description:
+					"All our partners only use reusable containers to package all your meals.",
+			},
+			{
+				title: "Pause anytime:",
+				description:
+					"Going on vacation? Just pause your subscription, and we refund unused days.",
+			},
+		],
+		link: "https://unifood-salahasb.vercel.app",
+	},
 ];

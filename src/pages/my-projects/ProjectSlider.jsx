@@ -19,7 +19,7 @@ function ProjectsSlider() {
 	}
 
 	useEffect(() => {
-		const handleResize = () => {
+		const calculateSliderTranslation = () => {
 			const viewportWidth = window.innerWidth;
 			const mobileCalc = 25 - 50 * currentItem - 21 * currentItem;
 			const tabletCalc = 30 - 40 * currentItem - 18 * currentItem;
@@ -30,11 +30,12 @@ function ProjectsSlider() {
 			if (viewportWidth >= 1280) setCurrentTranslate(desktopCalc);
 		};
 
-		handleResize();
+		calculateSliderTranslation();
 
-		window.addEventListener("resize", handleResize);
+		window.addEventListener("resize", calculateSliderTranslation);
 
-		return () => window.removeEventListener("resize", handleResize);
+		return () =>
+			window.removeEventListener("resize", calculateSliderTranslation);
 	}, [currentItem, currentTranslate]);
 
 	// Event handlers
@@ -44,7 +45,7 @@ function ProjectsSlider() {
 
 	// Styles
 	const sliderClasses = `flex  items-center justify-between gap-[21%]
-                700:gap-[18%] xl:gap-0 w-full transition-[transform] duration-[0.6s] ease-[cubic-bezier(.5,0,0,1)]  `;
+                700:gap-[18%] xl:gap-[10.4%] w-full transition-[transform] duration-[0.6s] ease-[cubic-bezier(.5,0,0,1)]  `;
 
 	const sliderContainerClasses =
 		"overflow-hidden w-full py-[9%] 700:py-[7%] xl:py-[7rem] flex max-w-[150rem] select-none   ";
@@ -52,7 +53,6 @@ function ProjectsSlider() {
 	if (!currentTranslate) return;
 
 	return (
-		// temp height and flex
 		<div
 			className={sliderContainerClasses}
 			// onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
