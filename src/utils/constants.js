@@ -54,7 +54,7 @@ export const myProjects = [
 		name: "Woody Cab",
 		path: "/projects/woodycab",
 		description: "hotel manager",
-		src: "/projects/woodycab",
+		src: "/projects/woody-cab",
 		techStack: [
 			"React.js",
 			"styled-components",
