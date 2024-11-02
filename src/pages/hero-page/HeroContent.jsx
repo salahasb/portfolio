@@ -16,7 +16,7 @@ function HeroContent() {
 			</h1>
 
 			<p className={subHeadingClasses}>
-				I transform designs reactive and responsive web apps/sites using
+				I transform designs into reactive and responsive web apps/sites using
 				React.js. prioritizing writing clean and maintainable code.
 			</p>
 		</>
