@@ -8,7 +8,7 @@ function MyInfo() {
 			<div className="flex items-center mb-10 gap-8 opacity-0 animate-[fadeIn-translateUp_1s_0.2s_forwards]  ">
 				<div className="  border-brand-500  border-2 rounded-full overflow-hidden ">
 					<img
-						src="/picture.webp"
+						src="/picture.jpg"
 						alt="my personal picture"
 						className="w-32  aspect-square opacity-0 animate-[fadeIn_1s_1.5s_forwards] "
 					/>
